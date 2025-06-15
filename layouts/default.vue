@@ -1,8 +1,12 @@
 <template>
-  <div class="h-screen w-screen flex flex-col bg-black text-white font-mono">
-    <div class="hidden lg:flex"><LayoutsDefaultHeader /></div>
-    <div class="lg:hidden"><LayoutsMobileHeader /></div>
+  <div class="bg-black absolute -z-50">
+    <div
+      class="absolute z-0 h-screen w-screen flex flex-col text-white font-mono"
+    >
+      <div class="hidden lg:flex"><LayoutsDefaultHeader /></div>
+      <div class="lg:hidden"><LayoutsMobileHeader /></div>
 
-    <slot />
+      <slot />
+    </div>
   </div>
 </template>

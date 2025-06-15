@@ -20,7 +20,7 @@ const selectedItem = computed(() => {
 
 <template>
   <div
-    class="w-full font-header flex flex-col justify-center items-center gap-4 pb-2 pt-6 px-6"
+    class="w-full font-header flex flex-col justify-center items-center gap-4 pb-2 pt-6 px-6 bg-black"
   >
     <div class="w-full flex items-end justify-between">
       <NuxtLink to="/"
@@ -73,7 +73,7 @@ const selectedItem = computed(() => {
               v-for="(item, index) in choices"
               :key="index"
               :class="{
-                'text-gray-500': item.to !== selectedItem?.to,
+                'text-gray-400': item.to !== selectedItem?.to,
               }"
             >
               <NuxtLink :to="item.to" @click="choicesOpen = false"

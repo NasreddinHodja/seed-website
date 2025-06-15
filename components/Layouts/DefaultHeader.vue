@@ -6,7 +6,7 @@ const content = header.en;
 
 <template>
   <div
-    class="w-full font-header flex justify-between items-end h-40 pb-2 px-16"
+    class="w-full font-header flex justify-between items-end h-40 pb-2 px-16 bg-black"
   >
     <NuxtLink to="/"
       ><div class="text text-5xl w-60">{{ content.leftText }}</div></NuxtLink

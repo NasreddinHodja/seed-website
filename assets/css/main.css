@@ -1,0 +1,25 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  h1 {
+    @apply text-4xl font-bold font-header text-white;
+  }
+
+  h2 {
+    @apply text-2xl font-semibold font-header text-neutral-100;
+  }
+
+  h3 {
+    @apply text-xl font-semibold text-neutral-100;
+  }
+
+  p {
+    @apply text-base text-neutral-300;
+  }
+
+  /* a {
+    @apply text-blue-400 underline hover:text-blue-200;
+  } */
+}
