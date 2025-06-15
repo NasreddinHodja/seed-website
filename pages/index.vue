@@ -33,7 +33,12 @@ const contacts = content.contacts.links;
         </div>
         <div class="font-header text-sm text-gray-400 flex lg:items-end gap-1">
           by
-          <a class="text-white" target="_blank" rel="noopener noreferrer">
+          <a
+            class="text-white"
+            href="https://github.com/NasreddinHodja"
+            target="_blank"
+            rel="noopener noreferrer"
+          >
             nas</a
           >
         </div>
