@@ -1,4 +1,4 @@
-<sript setup lang="ts">
+<script setup lang="ts">
 useHead({
   titleTemplate: (titleChunk) =>
     titleChunk ? `${titleChunk} - My Site` : "My Site",
@@ -11,7 +11,7 @@ useHead({
     { name: "twitter:image", content: r2Url("images", "seed.png") },
   ],
 });
-</sript>
+</script>
 
 <template>
   <div class="fixed inset-0 -z-50 bg-black"></div>
