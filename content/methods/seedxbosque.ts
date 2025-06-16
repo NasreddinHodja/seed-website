@@ -47,10 +47,6 @@ export default {
             label: "FFMEC",
             link: "https://zora.co/@0x26b4c08af698ed072738ab141412958e484c15a0",
           },
-          {
-            label: "FFMEC",
-            link: "https://zora.co/@0x26b4c08af698ed072738ab141412958e484c15a0",
-          },
           { label: "danificada", link: "https://zora.co/@danificada" },
           { label: "ygoralvesl", link: "https://zora.co/@ygoralvesl" },
           {
