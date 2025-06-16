@@ -1,7 +1,7 @@
 <script setup lang="ts">
 useHead({
   titleTemplate: (titleChunk) =>
-    titleChunk ? `${titleChunk} - My Site` : "My Site",
+    titleChunk ? `${titleChunk} - S.E.E.D.` : "S.E.E.D.",
   meta: [
     { property: "og:title", content: "S.E.E.D." },
     { property: "og:description", content: "S.E.E.D. art collective" },
