@@ -3,8 +3,8 @@ export default {
     title: "S.E.E.D. ZORA COLLECTIVE DROP V2.0",
     link: "https://zora.co/collect/zora:0x9568c682acd03836c99580a56fd504a9eed851d9",
     links: [
-      { label: "> ONBOARDING", to: "web3/zora-onboarding" },
-      { label: "> FOTOS & AFTERMOVIE", to: "web3/zorav2-gallery" },
+      { label: "> ONBOARDING", to: "/web3/zora-onboarding" },
+      { label: "> FOTOS & AFTERMOVIE", to: "/web3/zorav2-gallery" },
     ],
     flyer: {
       image:
@@ -237,8 +237,8 @@ export default {
     title: "S.E.E.D. ZORA COLLECTIVE DROP V2.0",
     link: "https://zora.co/collect/zora:0x9568c682acd03836c99580a56fd504a9eed851d9",
     links: [
-      { label: "> ONBOARDING", to: "web3/zora-onboarding" },
-      { label: "> GALLERY & AFTERMOVIE", to: "web3/zorav2-gallery" },
+      { label: "> ONBOARDING", to: "/web3/zora-onboarding" },
+      { label: "> GALLERY & AFTERMOVIE", to: "/web3/zorav2-gallery" },
     ],
     flyer: {
       image:

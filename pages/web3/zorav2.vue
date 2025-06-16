@@ -17,9 +17,7 @@ const content = computed(() => zorav2[lang.value]);
     <div class="flex flex-col gap-6">
       <NuxtLink
         v-for="link in content.links"
-        :href="link.to"
-        target="_blank"
-        rel="noopener noreferrer"
+        :to="link.to"
         class="bg-white text-black px-2 w-fit"
       >
         {{ link.label }}

@@ -11,7 +11,7 @@ const content = popnftnyc2023.en;
     <h1>{{ content.title }}</h1>
     <iframe
       :src="content.video"
-      class="w-full md:w-2/3 md:h-96 m-auto"
+      class="w-full h-[350px] md:w-1/2 md:h-[400px] m-auto"
       title="YouTube video player"
       frameborder="0"
       allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
