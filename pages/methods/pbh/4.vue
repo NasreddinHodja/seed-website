@@ -16,6 +16,6 @@ const content = computed(() => index[lang.value]);
 
     <div v-html="content.description" class="flex flex-col gap-6"></div>
 
-    <SharedPieceList :entries="content.pieces.works" />
+    <SharedPieceList :works="content.pieces.works" />
   </div>
 </template>

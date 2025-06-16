@@ -1,6 +1,6 @@
 <script setup lang="ts">
 defineProps<{
-  entries: {
+  works: {
     artist: string;
     pieces: {
       name: string;
@@ -13,10 +13,10 @@ defineProps<{
 </script>
 <template>
   <div class="flex flex-col w-screen-md gap-12">
-    <div v-for="entry in entries" class="flex flex-col gap-4">
-      <span class="italic font-semibold text-2xl">{{ entry.artist }}</span>
+    <div v-for="work in works" class="flex flex-col gap-4">
+      <span class="italic font-semibold text-2xl">{{ work.artist }}</span>
       <a
-        v-for="piece in entry.pieces"
+        v-for="piece in work.pieces"
         :href="piece.src"
         target="_blank"
         rel="noopener noreferrer"

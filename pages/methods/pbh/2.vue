@@ -25,6 +25,6 @@ const content = computed(() => index[lang.value]);
       </h4>
     </div>
 
-    <SharedPieceList :entries="content.pieces.works" />
+    <SharedPieceList :works="content.pieces.works" />
   </div>
 </template>
