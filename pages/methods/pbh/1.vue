@@ -26,11 +26,5 @@ const content = computed(() => index[lang.value]);
     </div>
 
     <SharedPieceList :entries="content.pieces.works" />
-
-    <!-- <div class="flex flex-col gap-14">
-      <h2>{{ content.artists.title }}</h2>
-      <SharedCreditsList :credits="content.artists.artists" />
-    </div>
-    <SharedPieceGallery :pieces="content.pieces" /> -->
   </div>
 </template>

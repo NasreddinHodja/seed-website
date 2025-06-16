@@ -20,9 +20,9 @@ defineProps<{
         :href="piece.src"
         target="_blank"
         rel="noopener noreferrer"
-        class="flex flex-row gap-2 items-center"
+        class="flex flex-row flex-wrap gap-2 items-center"
       >
-        <span class="text-xl">- {{ piece.name }}</span>
+        <span class="text-lg">- {{ piece.name }}</span>
         <span>({{ piece.date }})</span>
         <span v-if="piece.type === 'mp4'" class="bg-video text-black px-2"
           >MP4</span
