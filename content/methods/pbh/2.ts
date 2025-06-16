@@ -1,13 +1,13 @@
 export default {
   pt: {
-    title: "2. << RESET <> LEARN <> DIVE >>",
+    title: "2. “<< RESET <> LEARN <> DIVE >>”",
     description: [
       `
       Diferentemente do que ocorre nas outras ambientações, povoadas por
       múltiplas pequenas telas, ou monitor de um desktop, ou CRT-TVs, ou
       lixos eletrônicos piscantes, ou sons advindos de rádios antigos, ou
       objetos/pertences espalhados por aqui e acolá, em
-      <span class="bold"><< RESET <> LEARN <> DIVE >></span>, estamos diante
+      <span class="font-bold text-white"><< RESET <> LEARN <> DIVE >></span>, estamos diante
       de uma única grande tela em um ambiente isolado por cortinas. O
       ambiente faz alusão ao aparato câmara escura que dá origem às salas de
       cinema, convidando-nos a uma apreensão menos dispersa em termos de
@@ -22,7 +22,7 @@ export default {
       diante das imagens que lhe chegam enquadradas de dentro de um tubo de
       ensaio. Mas em algum momento se está de fato fora desse tubo de
       ensaio?
-      <span class="bold"><< RESET <> LEARN <> DIVE>></span> convida-nos a
+      <span class="font-bold text-white"><< RESET <> LEARN <> DIVE>></span> convida-nos a
       submergir no tempo dos filmes que há de exibir. Hipnotizades,
       distraidamente confortáveis em deus domínios, ao mesmo passo que
       analisades de fora. Confortáveis, até que alertas.
@@ -31,10 +31,10 @@ export default {
     image: {
       src: r2Url("images", "pbh_room_2.png"),
       caption:
-        'Estudo 3D inicial para a ambiência de "<< RESET <> LEARN <> DIVE >>"',
+        "Estudo 3D inicial para a ambiência de “<< RESET <> LEARN <> DIVE >>”",
     },
     pieces: {
-      title: 'ARISTAS/CRIADORES EXPONDO EM "<< RESET <> LEARN <> DIVE >>":',
+      title: "ARISTAS/CRIADORES EXPONDO EM “<< RESET <> LEARN <> DIVE >>”:",
       works: [
         {
           artist: "100porcent_genuine (100%)",
@@ -296,7 +296,7 @@ export default {
       Unlike the other environments, populated by multiple small screens,
       desktop monitors, CRT-TVs, blinking electronic waste, sounds from old
       radios, or scattered objects/possessions, in
-      <span class="bold"><< RESET <> LEARN <> DIVE >></span>, we are faced
+      <span class="font-bold text-white"><< RESET <> LEARN <> DIVE >></span>, we are faced
       with a single large screen in an isolated space enclosed by curtains.
       The environment alludes to the apparatus of a darkroom that gives rise
       to movie theaters, inviting us to a less scattered apprehension in
@@ -310,7 +310,7 @@ export default {
       like investigators analyzing an inert substance, absorbed by the
       images framed within a test tube. But at some point, are we truly
       outside of this test tube?
-      <span class="bold"><< RESET <> LEARN <> DIVE >></span> invites us to
+      <span class="font-bold text-white"><< RESET <> LEARN <> DIVE >></span> invites us to
       immerse ourselves in the time of the films it will display.
       Hypnotized, comfortably distracted in its dominion, while
       simultaneously analyzing from the outside. Comfortable, until we
@@ -320,10 +320,10 @@ export default {
     image: {
       src: r2Url("images", "pbh_room_2.png"),
       caption:
-        'Initial 3D study for the setting of "<< RESET <> LEARN <> DIVE >>"',
+        "Initial 3D study for the setting of “<< RESET <> LEARN <> DIVE >>”",
     },
     pieces: {
-      title: 'ARTISTS/CREATORS EXHIBITING IN "<< RESET <> LEARN <> DIVE >>":',
+      title: "ARTISTS/CREATORS EXHIBITING IN “<< RESET <> LEARN <> DIVE >>”:",
       works: [
         {
           artist: "100porcent_genuine (100%)",

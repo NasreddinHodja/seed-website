@@ -1,6 +1,6 @@
 export default {
   pt: {
-    title: "1. DECENTER ROOM/EYE-LICKING",
+    title: "1. “DECENTER ROOM/EYE-LICKING”",
     description: [
       `
       <span class="font-bold text-white">“DECENTER ROOM / EYE-LICKING”</span> nos convida a
@@ -384,20 +384,20 @@ export default {
     },
   },
   en: {
-    title: "1. DECENTER ROOM/EYE-LICKING",
+    title: "1. “DECENTER ROOM/EYE-LICKING”",
     description: [
       `
-      <span class="bold">"DECENTER ROOM / EYE-LICKING"</span> invites you to
+      <span class="font-bold text-white">"DECENTER ROOM / EYE-LICKING"</span> invites you to
       enter it through its tiny devices/screens - smartphones and mini
       tablets - standing out as a cluster of small flickering artificial
       light points amidst the profusion of works from
-      <span class="bold">Chapter 1: Parallel Biome Hypothesis</span>.
+      <span class="font-bold text-white">Chapter 1: Parallel Biome Hypothesis</span>.
       Scattered irregularly, the devices create patterns of screens on the
       walls, varying in length and width, vertically and horizontally.
       Visitors navigate the space, locating different constellations of
       screens, grouped in asymmetric quantities, displaying video/.GIF works
       that constitute the experience of
-      <span class="bold">"DECENTER ROOM / EYE-LICKING"</span>.
+      <span class="font-bold text-white">"DECENTER ROOM / EYE-LICKING"</span>.
       `,
       `
       A space with many small eyes; a living being with numerous
@@ -417,10 +417,10 @@ export default {
     image: {
       src: r2Url("images", "pbh_room_1.png"),
       caption:
-        'Initial 3D studies for the setting of "DECENTER ROOM / EYE-LICKING"',
+        "Initial 3D studies for the setting of “DECENTER ROOM/EYE-LICKING”",
     },
     pieces: {
-      title: 'ARTISTS/CREATORS EXHIBITING IN "DECENTER ROOM / EYE-LICKING":',
+      title: "ARTISTS/CREATORS EXHIBITING IN “DECENTER ROOM/EYE-LICKING”:",
       works: [
         {
           artist: "Alfacenttauri",

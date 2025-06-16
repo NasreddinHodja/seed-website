@@ -27,7 +27,12 @@ defineProps<{
         <span v-if="piece.type === 'mp4'" class="bg-video text-black px-2"
           >MP4</span
         >
-        <span v-if="piece.type === 'mov'" class="bg-video text-black px-2"
+        <span v-else-if="piece.type === 'mov'" class="bg-video text-black px-2"
+          >MOV</span
+        >
+        <span
+          v-else-if="piece.type === 'video'"
+          class="bg-video text-black px-2"
           >MOV</span
         >
         <span v-else-if="piece.type === 'jpg'" class="bg-img text-black px-2"
@@ -48,6 +53,21 @@ defineProps<{
           v-else-if="piece.type === 'web'"
           class="bg-performance text-black px-2"
           >WEB</span
+        >
+        <span v-else-if="piece.type === 'txt'" class="bg-txt text-black px-2"
+          >TXT</span
+        >
+        <span v-else-if="piece.type === 'zip'" class="bg-dir text-black px-2"
+          >ZIP</span
+        >
+        <span v-else-if="piece.type === 'rar'" class="bg-dir text-black px-2"
+          >RAR</span
+        >
+        <span v-else-if="piece.type === 'pdf'" class="bg-pdf text-black px-2"
+          >PDF</span
+        >
+        <span v-else-if="piece.type === 'mp3'" class="bg-audio text-black px-2"
+          >MP3</span
         >
       </a>
     </div>
