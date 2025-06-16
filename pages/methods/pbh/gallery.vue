@@ -1,41 +1,15 @@
 <script setup lang="ts">
-import index from "@/content/methods/pbh/index";
+import index from "@/content/methods/pbh/gallery";
 
-const lang = useCookie<"pt" | "en">("lang", { default: () => "en" });
-
-const content = computed(() => index[lang.value]);
+const content = index.en;
 </script>
 
 <template>
   <div
     class="w-full flex flex-col items-start justify-center px-6 md:px-16 gap-10 md:gap-14 pt-4 pb-14 md:pt-14 overflow-scroll"
   >
-    <SharedLangButton />
     <h1>{{ content.title }}</h1>
-    <NuxtLink
-      :to="content.gallery.link"
-      class="bg-white text-black text-xl font-bold px-2 w-fit"
-    >
-      {{ content.gallery.label }}
-    </NuxtLink>
-    <a
-      :href="content.flyer.link"
-      target="_blank"
-      rel="noopener noreferrer"
-      class="flex items-center justify-center w-full"
-    >
-      <img :src="content.flyer.src" class="md:w-2/3 m-auto" />
-    </a>
-    <!-- <div class="flex flex-col gap-10">
-      <p
-        v-for="paragraph in content.descriptionParagraphs"
-        v-html="paragraph"
-      ></p>
-    </div>
-    <div class="flex flex-col gap-14">
-      <h2>{{ content.artists.title }}</h2>
-      <SharedCreditsList :credits="content.artists.artists" />
-    </div>
-    <SharedPieceGallery :pieces="content.pieces" /> -->
+
+    <SharedPictureGallery :pictures="content.pictures" />
   </div>
 </template>

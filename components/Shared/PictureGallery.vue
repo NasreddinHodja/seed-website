@@ -5,14 +5,16 @@ defineProps<{
 </script>
 
 <template>
-  <div class="w-full grid grid-cols-1 md:grid-cols-3 gap-6">
+  <div class="columns-1 md:columns-3 gap-4 space-y-4">
     <a
       v-for="picture in pictures"
+      :key="picture.src"
+      :href="picture.link"
       target="_blank"
       rel="noopener noreferrer"
-      class="flex flex-col items-end gap-2"
+      class="block break-inside-avoid"
     >
-      <img :src="picture.src" class="w-full" />
+      <img :src="picture.src" class="w-full rounded" />
     </a>
   </div>
 </template>

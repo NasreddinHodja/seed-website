@@ -39,7 +39,7 @@ const creditSections = [
       rel="noopener noreferrer"
       class="flex items-center justify-center w-full"
     >
-      <img :src="content.flyer.src" class="md:w-2/3 m-auto" />
+      <img :src="content.flyer.src" class="md:w-1/2 mx-auto" />
     </a>
 
     <div class="flex flex-col gap-10">
