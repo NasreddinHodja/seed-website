@@ -43,17 +43,7 @@ const content = zorav1.en;
     </a>
     <div class="flex flex-col gap-14">
       <h2>{{ content.artists.title }}</h2>
-      <div class="flex flex-col gap-6 border-l-4 border-white pl-10">
-        <a
-          v-for="artist in content.artists.artists"
-          :href="artist.link"
-          target="_blank"
-          rel="noopener noreferrer"
-          class="text-xl w-fit"
-        >
-          {{ artist.name }}
-        </a>
-      </div>
+      <SharedCreditsList :credits="content.artists.artists" />
     </div>
     <SharedPieceGallery :pieces="content.pieces" />
   </div>
