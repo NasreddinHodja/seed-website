@@ -4,11 +4,11 @@ import index from "@/content/about/index";
 const content = index.en;
 </script>
 <template>
-  <div class="flex items-center justify-center">
+  <div class="w-screen flex items-center justify-center">
     <SharedVideoBackground :src="r2Url('videos', 'seed.mp4')" />
 
     <div
-      class="flex flex-col xl:grid xl:grid-cols-2 gap-10 px-16 py-10 md:py-16"
+      class="flex flex-col xl:grid xl:grid-cols-2 gap-10 px-6 md:px-16 py-10 md:py-16"
     >
       <div class="flex flex-col gap-10">
         <div class="flex flex-col gap-4">
