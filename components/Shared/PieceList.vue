@@ -69,6 +69,11 @@ defineProps<{
         <span v-else-if="piece.type === 'mp3'" class="bg-audio text-black px-2"
           >MP3</span
         >
+        <span
+          v-else-if="piece.type === 'installation'"
+          class="bg-performance text-black px-2"
+          >INSTALLATION</span
+        >
       </a>
     </div>
   </div>

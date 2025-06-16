@@ -263,7 +263,7 @@ export default {
               src: "https://drive.google.com/file/d/1Sf51eAOpNKtpqiTwbi7JygXNKUQ8ehuD/view",
             },
             {
-              name: "REAGE” - img",
+              name: "'REAGE' - img",
               type: "jpg",
               date: "2023",
               src: "https://drive.google.com/file/d/1sgR4KRhas3RM-uiCTtEh3IlrTtVpjWU0/view",
@@ -654,7 +654,7 @@ export default {
               src: "https://drive.google.com/file/d/1Sf51eAOpNKtpqiTwbi7JygXNKUQ8ehuD/view",
             },
             {
-              name: "REAGE” - img",
+              name: "'REAGE' - img",
               type: "jpg",
               date: "2023",
               src: "https://drive.google.com/file/d/1sgR4KRhas3RM-uiCTtEh3IlrTtVpjWU0/view",
