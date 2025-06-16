@@ -6,7 +6,7 @@ const content = index.en;
 
 <template>
   <div
-    class="w-full h-full flex flex-col items-start justify-start px-6 md:px-16 gap-10 pt-4 pb-14 md:pt-10"
+    class="w-full h-auto flex flex-col items-start justify-start px-6 md:px-16 gap-6 md:gap-10 pt-4 pb-14 md:pt-10"
   >
     <h1>{{ content.title }}</h1>
 
@@ -17,15 +17,20 @@ const content = index.en;
         </div>
 
         <div class="flex flex-row flex-wrap gap-4">
-          <a
+          <div
             v-for="event in content.events"
-            :href="event.link"
-            target="_blank"
-            rel="noopener noreferrer"
             class="text-xl font-bold text-black bg-white px-2"
           >
-            {{ event.label }}
-          </a>
+            <a
+              v-if="!event.link.startsWith('/')"
+              :href="event.link"
+              target="_blank"
+              rel="noopener noreferrer"
+            >
+              {{ event.label }}
+            </a>
+            <NuxtLink v-else :to="event.link">{{ event.label }}</NuxtLink>
+          </div>
         </div>
       </div>
 

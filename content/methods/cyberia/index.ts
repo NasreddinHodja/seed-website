@@ -30,7 +30,7 @@ export default {
       { label: "#001", link: "/methods/cyberia/001" },
       { label: "#002", link: "/methods/cyberia/002" },
       {
-        label: "Episodes on Radio Venenno",
+        label: "> Episodes on Radio Venenno",
         link: "https://veneno.live/shows/cyberia-by-s-e-e-d/",
       },
     ],
