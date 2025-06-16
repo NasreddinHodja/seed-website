@@ -23,9 +23,9 @@ const content = index.en;
       }}</a>
     </div>
     <img class="m-auto" id="shirts" :src="content.gif" />
-    <div class="m-auto flex flex-wrap gap-4">
-      <img :src="content.images[0]" />
-      <img :src="content.images[1]" />
+    <div class="flex flex-wrap gap-1 justify-center">
+      <img :src="content.images[0]" class="w-full md:w-1/3" />
+      <img :src="content.images[1]" class="w-full md:w-1/3" />
     </div>
   </div>
 </template>
