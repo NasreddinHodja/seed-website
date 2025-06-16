@@ -203,7 +203,7 @@ export default {
               name: "My wings will never burn in the sun",
               type: "png",
               date: "2022",
-              src: "“My wings will never burn in the sun”",
+              src: "",
             },
             {
               name: "Perennial links",
@@ -586,7 +586,7 @@ export default {
               name: "My wings will never burn in the sun",
               type: "png",
               date: "2022",
-              src: "“My wings will never burn in the sun”",
+              src: "",
             },
             {
               name: "Perennial links",
