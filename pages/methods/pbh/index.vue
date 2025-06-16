@@ -60,13 +60,13 @@ const creditSections = [
     <p v-html="content.expoGuide.ambients.description"></p>
 
     <div class="flex flex-col gap-4">
-      <a
+      <NuxtLink
         v-for="room in content.expoGuide.ambients.rooms"
-        :href="room.link"
+        :to="room.link"
         class="bg-white text-black px-2 text-xl w-fit"
       >
         {{ room.label }}
-      </a>
+      </NuxtLink>
     </div>
 
     <h2>{{ content.credits.title }}</h2>
