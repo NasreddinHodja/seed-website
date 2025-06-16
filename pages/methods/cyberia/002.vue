@@ -1,5 +1,5 @@
 <script setup lang="ts">
-import index from "@/content/methods/cyberia/000";
+import index from "@/content/methods/cyberia/002";
 
 const content = index.en;
 </script>
@@ -22,7 +22,16 @@ const content = index.en;
       </a>
     </div>
 
-    <img :src="content.flyer" class="md:w-1/2 mx-auto md:pb-14" />
+    <img :src="content.flyer" class="md:w-1/2 h-auto mx-auto md:pb-14" />
+
+    <iframe
+      :src="content.video"
+      class="w-full h-[350px] md:w-1/2 md:h-[400px] m-auto"
+      title="YouTube video player"
+      frameborder="0"
+      allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+      allowfullscreen
+    ></iframe>
 
     <div class="grid grid-cols-1 md:grid-cols-3 gap-6">
       <img v-for="picture in content.gallery" :src="picture" />
