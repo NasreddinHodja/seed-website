@@ -1,7 +1,7 @@
 <script setup lang="ts">
 defineProps<{
   credits?: { label: string; link: string }[];
-  names: string[];
+  names?: string[];
 }>();
 </script>
 
