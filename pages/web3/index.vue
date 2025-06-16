@@ -1,5 +1,16 @@
+<script setup lang="ts">
+import index from "@/content/web3/index";
+
+const content = index.en;
+</script>
 <template>
-  <div class="h-full w-full flex items-center justify-center bg-blue-500">
-    <div class="w-24">WEB3</div>
+  <div
+    class="w-full h-auto md:h-full flex flex-col items-start justify-center px-6 md:px-16 gap-10 md:gap-28 pt-4 pb-28 md:pt-10 overflow-scroll"
+  >
+    <div v-for="option in content.options">
+      <h1>
+        <NuxtLink :to="option.url">{{ option.title }}</NuxtLink>
+      </h1>
+    </div>
   </div>
 </template>
