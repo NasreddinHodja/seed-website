@@ -54,7 +54,7 @@ export default {
       Agora, agora mesmo, se pudéssemos mergulhar incessantemente, tanto em
       escala macro quanto microscópica, tanto na direção interestelar quanto
       vastidão intracelular, por certo não conseguiríamos alcançar um
-      extremo, uma unidade de medida ínfimaf cume de nossas incursões — e,
+      extremo, uma unidade de medida ínfima, cume de nossas incursões — e,
       em verdade, nem é necessário nos desprendermos do chão para nos
       perdermos nessa viagem sem fim. Estamos sempre a meio caminho de.
       <span class="font-bold text-white"
@@ -200,7 +200,7 @@ export default {
           "Rodrigus Pinheiro",
         ],
       },
-      artists: {
+      artits: {
         title: "ARTISTAS",
         artists: [
           ".·:*¨༺ 𝒔𝒂𝒅𝒈𝒊𝒓𝒍 ༻¨*:·",
@@ -416,12 +416,11 @@ export default {
         <span class="font-bold text-white">“Chapter 1: Parallel Biome Hypothesis”</span>.
         `,
         `Agradecemos a todes.`,
-        `<span class="font-bold text-white text-xl">S.E.E.D.</span>`,
       ],
     },
-    artifactVideo: {
+    artefactVideo: {
       link: "https://objkt.com/tokens/KT1MQhiUT6bpA8TKbJWo3cjn748Rrfux8AQE/1",
-      src: r2Url("videos", "pbh_artifact.webm"),
+      src: r2Url("videos", "pbh_artefact.webm"),
       label: "> on OBJKT",
     },
   },
@@ -619,7 +618,7 @@ export default {
           "Rodrigus Pinheiro",
         ],
       },
-      artists: {
+      artits: {
         title: "ARTISTS",
         artists: [
           ".·:*¨༺ 𝒔𝒂𝒅𝒈𝒊𝒓𝒍 ༻¨*:·",
@@ -834,12 +833,12 @@ export default {
           <span class="font-bold text-white">"Chapter 1: Parallel Biome Hypothesis"</span>.
         `,
         `We extend our gratitude to everyone.`,
-        `<span class="font-bold text-white text-xl">S.E.E.D.</span>`,
+        `S.E.E.D.`,
       ],
     },
-    artifactVideo: {
+    artefactVideo: {
       link: "https://objkt.com/tokens/KT1MQhiUT6bpA8TKbJWo3cjn748Rrfux8AQE/1",
-      src: r2Url("videos", "pbh_artifact.webm"),
+      src: r2Url("videos", "pbh_artefact.webm"),
       label: "> on OBJKT",
     },
   },
