@@ -14,19 +14,20 @@ useHead({
 </script>
 
 <template>
-  <div class="fixed inset-0 -z-50 bg-black"></div>
-  <div
-    class="relative z-0 h-screen w-screen min-h-screen flex flex-col text-white font-mono"
-  >
-    <div class="hidden lg:flex">
-      <LayoutsDefaultHeader />
-    </div>
-    <div class="lg:hidden">
-      <LayoutsMobileHeader />
-    </div>
+  <div class="h-screen w-screen">
+    <div class="fixed inset-0 -z-50 w-full h-full bg-black"></div>
 
-    <main class="flex-1 overflow-y-auto">
-      <slot />
-    </main>
+    <div class="relative z-0 h-full w-full flex flex-col text-white font-mono">
+      <div class="hidden lg:flex">
+        <LayoutsDefaultHeader />
+      </div>
+      <div class="lg:hidden">
+        <LayoutsMobileHeader />
+      </div>
+
+      <main class="w-full h-full flex-1 overflow-y-auto">
+        <slot />
+      </main>
+    </div>
   </div>
 </template>

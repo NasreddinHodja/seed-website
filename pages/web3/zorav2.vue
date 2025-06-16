@@ -8,7 +8,7 @@ const content = computed(() => zorav2[lang.value]);
 
 <template>
   <div
-    class="w-full h-auto flex flex-col items-start justify-center px-6 md:px-16 gap-10 md:gap-16 pt-4 pb-14 md:pt-16 overflow-scroll"
+    class="w-full flex flex-col items-start justify-center px-6 md:px-16 gap-10 md:gap-16 pt-4 pb-14 md:pt-16 overflow-scroll"
   >
     <SharedLangButton />
     <a :href="content.link" target="_blank" rel="noopener noreferrer">
