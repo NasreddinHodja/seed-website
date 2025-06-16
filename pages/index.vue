@@ -10,7 +10,7 @@ const contacts = content.contacts.links;
     <img class="px-10 pb-32" :src="content.backgroundImage" />
     <div class="absolute bottom-0 left-0 w-full flex flex-col px-4">
       <div
-        class="w-full flex flex-col lg:flex-row lg:justify-between gap-2 pb-2"
+        class="w-full flex flex-col lg:flex-row lg:justify-between gap-2 pb-14 md:pb-2"
       >
         <div class="flex flex-col gap-1">
           <div class="font-header text-sm">{{ content.contacts.label }}</div>

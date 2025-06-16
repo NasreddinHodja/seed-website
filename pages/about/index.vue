@@ -8,7 +8,7 @@ const content = index.en;
     <SharedVideoBackground :src="r2Url('videos', 'seed.mp4')" />
 
     <div
-      class="flex flex-col xl:grid xl:grid-cols-2 gap-10 px-6 md:px-16 py-10 md:py-16"
+      class="flex flex-col xl:grid xl:grid-cols-2 gap-10 px-6 md:px-16 pb-14 md:pb-16 pt-10 md:pt-16"
     >
       <div class="flex flex-col gap-10">
         <div class="flex flex-col gap-4">

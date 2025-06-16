@@ -6,7 +6,7 @@ const content = coreMembers.en;
 
 <template>
   <div
-    class="flex flex-col w-screen gap-24 px-6 md:px-16 py-10 md:py-24 items-start md:items-center"
+    class="flex flex-col w-screen gap-24 px-6 md:px-16 py-14 md:py-24 items-start md:items-center"
   >
     <div class="flex flex-col gap-6 md:gap-10 md:w-96">
       <div

@@ -5,7 +5,7 @@ const content = index.en;
 </script>
 <template>
   <div
-    class="flex flex-col w-screen gap-24 px-6 md:px-16 py-10 md:py-16 items-start md:items-start"
+    class="flex flex-col w-screen gap-24 px-6 md:px-16 py-14 md:py-16 items-start md:items-start"
   >
     <h1>{{ content.title }}</h1>
     <div class="m-auto flex flex-wrap items-end gap-4">
