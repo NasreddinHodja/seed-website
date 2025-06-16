@@ -4,14 +4,14 @@ defineProps<{
 }>();
 </script>
 <template>
-  <div class="flex flex-col max-w-screen-md m-auto gap-10">
+  <div class="flex flex-col w-screen-md m-auto gap-24">
     <a
       v-for="piece in pieces"
       target="_blank"
       rel="noopener noreferrer"
       class="flex flex-col items-end gap-2"
     >
-      <img :src="piece.src" />
+      <img :src="piece.src" class="m-auto" />
       <span v-if="piece.type === 'video'" class="bg-video text-black px-2"
         >VIDEO</span
       >
