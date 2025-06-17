@@ -45,9 +45,9 @@ export default {
       ficção que determine e inscreva esse ponto “1” em meio às intempéries
       do espaço e tempo redemoinhes, com alguma frequência, disposta a meio
       caminho, imprescindindo, assim, tanto de um antes (A) quanto de um
-      depois (C).
+      depois (C&#8203;).
       <span class="font-bold text-white"
-        >Mas de que antes (A) e de que depois (C)? Antes (A) e depois (C)
+        >Mas de que antes (A) e de que depois (C&#8203;)? Antes (A) e depois (C&#8203;)
         fazem alguma diferença quando se está prese em loop de automatismos
         tecnolinguísticos?</span
       >
@@ -460,8 +460,8 @@ export default {
         The designation "first" always requires a criterion, a convention, a fiction that determines 
         and inscribes this point <span class="font-bold text-white">"1"</span> amidst the whirlwinds of space and time, 
         often situated midway, thus depending on both a before <span class="font-bold text-white">(A)</span> and an after 
-        <span class="font-bold text-white">(C)</span>. <span class="font-bold text-white">But what before (A) and what after (C)? 
-        Do before (A) and after (C) make any difference when one is trapped in a loop of 
+        <span class="font-bold text-white">(C&#8203;)</span>. <span class="font-bold text-white">But what before (A) and what after (C&#8203;)? 
+        Do before (A) and after (C&#8203;) make any difference when one is trapped in a loop of 
         technolinguistic automatisms?</span> Now, right now, if we could dive incessantly, 
         both on a macro and microscopic scale, both in the interstellar direction and intracellular 
         vastness, we certainly would not be able to reach an extreme, an infinitesimal unit of measurement,
