@@ -30,9 +30,9 @@ const content = index.en;
           </NuxtLink>
         </div>
 
-        <div class="flex flex-col gap-4">
+        <div class="flex flex-col gap-4 w-fit">
           <h1 class="bg-black w-fit">{{ content.contactUs.label }}</h1>
-          <div class="flex flex-col gap-0.5 bg-black">
+          <div class="flex flex-col gap-0.5 bg-black w-fit">
             <div
               v-for="contact in content.contactUs.links"
               class="font-header text-neutral-300"
@@ -51,7 +51,7 @@ const content = index.en;
       </div>
       <div class="flex flex-col gap-4">
         <div class="flex flex-col gap-4">
-          <h1 class="bg-black">{{ content.seedPhilosophy.title }}</h1>
+          <h1 class="bg-black w-fit">{{ content.seedPhilosophy.title }}</h1>
           <p class="bg-black text-xl">
             {{ content.seedPhilosophy.text }}
           </p>

@@ -16,6 +16,9 @@ module.exports = {
         installation: "#666666",
         performance: "#808080",
       },
+      height: {
+        "screen-dynamic": "calc(var(--vh, 1vh) * 100)",
+      },
     },
   },
 };
