@@ -14,7 +14,7 @@ useHead({
 </script>
 
 <template>
-  <div class="h-full w-screen">
+  <div class="h-screen w-screen">
     <div class="fixed inset-0 -z-50 w-full h-full bg-black"></div>
 
     <div class="relative z-0 h-full w-full flex flex-col text-white font-mono">
