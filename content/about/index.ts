@@ -4,7 +4,7 @@ export default {
   en: {
     whoAreWe: {
       title: "Who are we",
-      text: "S.E.E.D_dao is a cross-disciplinary collective of web3 artists conceiving artistic practices as well as an exhibition experience that brings together immersive environments and the development of a curatorial axis of works in NFT and IRL.",
+      text: "S.E.E.D_dao is a cross-disciplinary collective of web3 artists conceiving artistic practices as well as an exhibition experience that brings together immersive environments and the development of a curatorial axis of works in Digital Art (NFT) and IRL",
       link: r2Url("documents", "seed_who_are.pdf"),
     },
     coreMembers: {
