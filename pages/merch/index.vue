@@ -2,22 +2,15 @@
 import index from "@/content/merch/index";
 
 const content = index.en;
+const videoId = extractYTVideoID(content.video);
 </script>
 <template>
   <div
     class="flex flex-col w-screen gap-24 px-6 md:px-16 py-14 md:py-16 items-start md:items-start"
   >
     <h1>{{ content.title }}</h1>
-    <div class="m-auto flex flex-wrap items-end gap-4">
-      <iframe
-        :src="content.video"
-        class="w-full md:w-96 md:h-60"
-        title="YouTube video player"
-        frameborder="0"
-        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
-        referrerpolicy="strict-origin-when-cross-origin"
-        allowfullscreen
-      ></iframe>
+    <div v-if="videoId" class="m-auto flex flex-wrap items-end gap-4">
+      <SharedYTLazyEmbed :video-id="videoId" class="w-full md:w-96" />
       <a class="bg-white text-black font-xl" :href="content.link.url">{{
         content.link.label
       }}</a>

@@ -2,6 +2,7 @@
 import index from "@/content/methods/cyberia/001";
 
 const content = index.en;
+const videoId = extractYTVideoID(content.video);
 </script>
 
 <template>
@@ -24,13 +25,10 @@ const content = index.en;
 
     <img :src="content.flyer" class="md:w-1/2 mx-auto md:pb-14" />
 
-    <iframe
-      :src="content.video"
-      class="w-full h-[350px] md:w-1/2 md:h-[400px] m-auto"
-      title="YouTube video player"
-      frameborder="0"
-      allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
-      allowfullscreen
-    ></iframe>
+    <SharedYTLazyEmbed
+      v-if="videoId"
+      :video-id="videoId"
+      class="w-full md:w-[700px] mx-auto"
+    />
   </div>
 </template>

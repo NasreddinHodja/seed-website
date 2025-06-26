@@ -2,6 +2,7 @@
 import seedbhresidency from "@/content/methods/seedbhresidency";
 
 const content = seedbhresidency.en;
+const videoId = extractYTVideoID(content.video.src);
 const credits = [
   content.credits.artists,
   content.credits.executiveProducers,
@@ -28,16 +29,11 @@ const credits = [
       <img :src="content.flyer.src" class="md:max-w-[500px]" />
     </a>
 
-    <div class="flex flex-col items-end mx-auto gap-2">
-      <iframe
-        :src="content.video.src"
-        class="w-full md:w-[700px] md:h-[400px] mx-auto"
-        title="YouTube video player"
-        frameborder="0"
-        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
-        referrerpolicy="strict-origin-when-cross-origin"
-        allowfullscreen
-      ></iframe>
+    <div v-if="videoId" class="flex flex-col items-end mx-auto gap-2">
+      <SharedYTLazyEmbed
+        :video-id="videoId"
+        class="w-full md:w-[700px] mx-auto"
+      />
       <a
         :href="content.video.link"
         target="_blank"

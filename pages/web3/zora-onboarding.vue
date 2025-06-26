@@ -2,6 +2,10 @@
 import zoraOnboarding from "@/content/web3/zora-onboarding";
 
 const content = zoraOnboarding.pt;
+const parts = content.parts.map((part) => ({
+  title: part.title,
+  video: extractYTVideoID(part.video),
+}));
 </script>
 
 <template>
@@ -20,16 +24,14 @@ const content = zoraOnboarding.pt;
         >{{ link.label }}
       </a>
     </div>
-    <div v-for="part in content.parts" class="flex w-full flex-col gap-10">
+    <div v-for="part in parts" class="flex w-full flex-col gap-10">
       <h2>{{ part.title }}</h2>
-      <iframe
-        :src="part.video"
-        class="w-full h-[350px] md:w-1/2 md:h-[400px] m-auto"
-        title="YouTube video player"
-        frameborder="0"
-        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
-        allowfullscreen
-      ></iframe>
+
+      <SharedYTLazyEmbed
+        v-if="part.video"
+        :video-id="part.video"
+        class="w-full md:w-[700px] mx-auto"
+      />
     </div>
   </div>
 </template>
