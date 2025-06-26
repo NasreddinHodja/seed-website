@@ -29,5 +29,8 @@ const content = seedxbosque_patagonia.en;
 
     <h2>{{ content.participants.title }}</h2>
     <SharedCreditsList :credits="content.participants.credits" />
+
+    <img :src="content.peopleB" class="mx-auto" />
+    <img :src="content.peopleC" class="mx-auto" />
   </div>
 </template>
