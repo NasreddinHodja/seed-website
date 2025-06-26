@@ -1,0 +1,47 @@
+<script setup lang="ts">
+import index from "@/content/methods/cyberia/003";
+
+const content = index.en;
+</script>
+
+<template>
+  <div
+    class="w-full h-auto flex flex-col items-start justify-start px-6 md:px-16 gap-10 md:gap-26 pt-4 pb-14 md:pt-10"
+  >
+    <h1>{{ content.title }}</h1>
+
+    <!-- <div class="flex flex-wrap gap-4 md:pb-10">
+      <a
+        v-for="artist in content.lineup"
+        :href="artist.link"
+        target="_blank"
+        rel="noopener noreferrer"
+        class="text-xl font-bold bg-white text-black px-2"
+      >
+        {{ artist.name }}
+      </a>
+    </div> -->
+
+    <!-- <img :src="content.flyer" class="md:w-1/2 h-auto mx-auto md:pb-14" /> -->
+
+    <video
+      autoplay
+      muted
+      loop
+      playsinline
+      class="w-full md:w-2/3 h-full object-cover mx-auto"
+    >
+      <source :src="content.video" type="video/mp4" />
+    </video>
+
+    <!-- <SharedYTLazyEmbed
+      v-if="videoId"
+      :video-id="videoId"
+      class="w-full md:w-[700px] mx-auto"
+    /> -->
+
+    <div class="grid grid-cols-1 md:grid-cols-3 gap-6">
+      <img v-for="picture in content.gallery" :src="picture" />
+    </div>
+  </div>
+</template>

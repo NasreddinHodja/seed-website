@@ -2,6 +2,10 @@ export default {
   en: {
     options: [
       {
+        title: "CYBERIA",
+        url: "/methods/cyberia",
+      },
+      {
         title: "SEED x NEWTRO",
         url: "/methods/seedxnewtro",
       },
@@ -20,10 +24,6 @@ export default {
       {
         title: "Parallel Biome Hypothesis",
         url: "/methods/pbh",
-      },
-      {
-        title: "CYBERIA",
-        url: "/methods/cyberia",
       },
     ],
   },
