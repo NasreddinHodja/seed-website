@@ -34,15 +34,8 @@ const content = index.en;
         </div>
       </div>
 
-      <div class="flex-1 flex flex-col items-start gap-2">
-        <a
-          :href="content.image.link"
-          class="border-4 border-white"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          <img :src="content.image.src" class="w-full max-w-[900px]" />
-        </a>
+      <div class="flex-1 flex flex-col items-start gap-2 border-4 border-white">
+        <img :src="content.image.src" class="w-full max-w-[900px]" />
       </div>
     </div>
   </div>
