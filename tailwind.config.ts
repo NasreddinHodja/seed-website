@@ -1,3 +1,5 @@
+const { zinc, white } = require("tailwindcss/colors");
+
 module.exports = {
   theme: {
     fontFamily: {
@@ -6,6 +8,8 @@ module.exports = {
     },
     extend: {
       colors: {
+        white: white,
+        gray: zinc,
         pdf: "#8c8c8c",
         video: "#787878",
         audio: "#646464",
@@ -21,4 +25,11 @@ module.exports = {
       },
     },
   },
+  content: [
+    "./components/**/*.{vue,js,ts}",
+    "./layouts/**/*.{vue,js,ts}",
+    "./pages/**/*.{vue,js,ts}",
+    "./app.vue",
+    "./plugins/**/*.{js,ts}",
+  ],
 };

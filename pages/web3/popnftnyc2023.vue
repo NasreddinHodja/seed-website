@@ -6,7 +6,7 @@ const content = popnftnyc2023.en;
 
 <template>
   <div
-    class="w-full h-auto flex flex-col items-start justify-center px-6 md:px-16 gap-10 md:gap-16 pt-4 pb-14 md:pt-16 overflow-scroll"
+    class="w-full h-auto flex flex-col items-start justify-center px-6 md:px-16 gap-10 md:gap-16 pt-4 pb-14 md:pt-16 overflow-auto"
   >
     <h1>{{ content.title }}</h1>
     <iframe
