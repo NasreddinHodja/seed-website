@@ -6,6 +6,10 @@ export default {
         url: "/methods/seedxnewtro",
       },
       {
+        title: "SEED x Bosque Gracias Patagonia",
+        url: "/methods/seedxbosque_patagonia",
+      },
+      {
         title: "SEED BH Residency",
         url: "/methods/seedbhresidency",
       },

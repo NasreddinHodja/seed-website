@@ -3,6 +3,7 @@ import index from "@/content/about/index";
 
 const content = index.en;
 </script>
+
 <template>
   <div class="w-screen flex items-center justify-center">
     <SharedVideoBackground :src="r2Url('videos', 'seed.mp4')" />

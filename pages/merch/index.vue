@@ -4,6 +4,7 @@ import index from "@/content/merch/index";
 const content = index.en;
 const videoId = extractYTVideoID(content.video);
 </script>
+
 <template>
   <div
     class="flex flex-col w-screen gap-24 px-6 md:px-16 py-14 md:py-16 items-start md:items-start"
