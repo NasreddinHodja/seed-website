@@ -11,6 +11,7 @@ const choicesOpen = ref(false);
 const selectedItem = computed(() => {
   const to = `${route.path.split("/")[1]}`;
   const filteredChoices = choices.filter((choice) => {
+    if (!choice.to.startsWith("/")) return false;
     const choiceTo = choice.to.split("/")[1];
     return choiceTo === to;
   });

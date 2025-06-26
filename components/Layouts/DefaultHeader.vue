@@ -14,7 +14,7 @@ const content = header.en;
     <div class="flex gap-2">
       <div
         v-for="(item, index) in content.navigation"
-        class="flex text-xl gap-2"
+        class="flex text-lg gap-2"
       >
         <div v-if="index > 0">｜</div>
         <NuxtLink :to="item.to">{{ item.label }}</NuxtLink>

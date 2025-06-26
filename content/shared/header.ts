@@ -18,6 +18,10 @@ export default {
         label: "MERCH",
         to: "/merch",
       },
+      {
+        label: "TAROT",
+        to: "https://saros-gui.vercel.app/",
+      },
     ],
     rightImage: r2Url("images", "e.jpg"),
   },
