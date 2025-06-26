@@ -2,24 +2,24 @@
 import index from "@/content/merch/index";
 
 const content = index.en;
-const videoId = extractYTVideoID(content.video);
 </script>
 
 <template>
   <div
-    class="flex flex-col w-screen gap-24 px-6 md:px-16 py-14 md:py-16 items-start md:items-start"
+    class="w-full h-auto flex flex-col items-start justify-center px-6 md:px-16 gap-10 md:gap-16 pt-4 pb-14 md:pt-10 overflow-auto"
   >
-    <h1>{{ content.title }}</h1>
-    <div v-if="videoId" class="m-auto flex flex-wrap items-end gap-4">
-      <SharedYTLazyEmbed :video-id="videoId" class="w-full md:w-96" />
-      <a class="bg-white text-black font-xl" :href="content.link.url">{{
-        content.link.label
-      }}</a>
-    </div>
-    <img class="m-auto" id="shirts" :src="content.gif" />
-    <div class="flex flex-wrap gap-1 justify-center">
-      <img :src="content.images[0]" class="w-full md:w-1/3" />
-      <img :src="content.images[1]" class="w-full md:w-1/3" />
+    <div v-for="option in content.options" class="flex w-full">
+      <NuxtLink :to="option.url" class="block w-full">
+        <div class="flex flex-col gap-4 w-full">
+          <h1>
+            {{ option.title }}
+          </h1>
+          <img
+            :src="option.picture"
+            class="w-full md:w-1/2 h-auto object-cover mx-auto"
+          />
+        </div>
+      </NuxtLink>
     </div>
   </div>
 </template>
