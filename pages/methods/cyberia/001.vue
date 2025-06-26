@@ -2,7 +2,6 @@
 import index from "@/content/methods/cyberia/001";
 
 const content = index.en;
-const videoId = extractYTVideoID(content.video);
 </script>
 
 <template>
@@ -25,10 +24,8 @@ const videoId = extractYTVideoID(content.video);
 
     <img :src="content.flyer" class="md:w-1/2 mx-auto md:pb-14" />
 
-    <SharedYTLazyEmbed
-      v-if="videoId"
-      :video-id="videoId"
-      class="w-full md:w-[700px] mx-auto"
-    />
+    <div class="grid grid-cols-1 md:grid-cols-3 gap-6">
+      <img v-for="picture in content.gallery" :src="picture" />
+    </div>
   </div>
 </template>

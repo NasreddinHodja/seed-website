@@ -1,8 +1,7 @@
 <script setup lang="ts">
-import index from "~/content/methods/cyberia/003";
+import index from "~/content/methods/cyberia/004";
 
 const content = index.en;
-const videoId = extractYTVideoID(content.video);
 </script>
 
 <template>
@@ -11,7 +10,7 @@ const videoId = extractYTVideoID(content.video);
   >
     <h1>{{ content.title }}</h1>
 
-    <div class="flex flex-wrap gap-4 md:pb-10">
+    <!-- <div class="flex flex-wrap gap-4 md:pb-10">
       <a
         v-for="artist in content.lineup"
         :href="artist.link"
@@ -21,15 +20,25 @@ const videoId = extractYTVideoID(content.video);
       >
         {{ artist.name }}
       </a>
-    </div>
+    </div> -->
 
-    <img :src="content.flyer" class="md:w-1/2 h-auto mx-auto md:pb-14" />
+    <!-- <img :src="content.flyer" class="md:w-1/2 h-auto mx-auto md:pb-14" /> -->
 
-    <SharedYTLazyEmbed
+    <video
+      autoplay
+      muted
+      loop
+      playsinline
+      class="w-full md:w-2/3 h-full object-cover mx-auto"
+    >
+      <source :src="content.video" type="video/mp4" />
+    </video>
+
+    <!-- <SharedYTLazyEmbed
       v-if="videoId"
       :video-id="videoId"
       class="w-full md:w-[700px] mx-auto"
-    />
+    /> -->
 
     <div class="grid grid-cols-1 md:grid-cols-3 gap-6">
       <img v-for="picture in content.gallery" :src="picture" />

@@ -26,10 +26,11 @@ export default {
       src: r2Url("images", "cyberia_preview.jpg"),
     },
     events: [
-      { label: "#000", link: "/methods/cyberia/000" },
       { label: "#001", link: "/methods/cyberia/001" },
       { label: "#002", link: "/methods/cyberia/002" },
       { label: "#003", link: "/methods/cyberia/003" },
+      { label: "#004", link: "/methods/cyberia/004" },
+      { label: "#005", link: "/methods/cyberia/005" },
       {
         label: "> Episodes on Radio Venenno",
         link: "https://veneno.live/shows/cyberia-by-s-e-e-d/",
