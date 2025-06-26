@@ -2,6 +2,10 @@ export default {
   en: {
     options: [
       {
+        title: "SEED x NEWTRO",
+        url: "/methods/seedxnewtro",
+      },
+      {
         title: "SEED BH Residency",
         url: "/methods/seedbhresidency",
       },
