@@ -15,7 +15,8 @@ export default {
         link: "https://on.soundcloud.com/mkyTeDkaCWTHw1Zi9",
       },
     ],
-    banner: r2Url("images", "cyberia_004_banner.png"),
+    flyerFront: r2Url("images", "cyberia_005_flyer_front.jpg"),
+    flyerBack: r2Url("images", "cyberia_005_flyer_back.jpg"),
     gif: r2Url("images", "cyberia_004_gif_markit.gif"),
     description: [
       "Maior Edição de CYBERIA, que aconteceu em 10.05, em São Paulo.",

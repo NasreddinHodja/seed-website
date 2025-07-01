@@ -22,7 +22,14 @@ const content = index.en;
       </a>
     </div>
 
-    <img :src="content.banner" class="h-auto mx-auto p-4 md:mb-14 bg-white" />
+    <img
+      :src="content.flyerFront"
+      class="h-auto w-full md:w-1/2 mx-auto md:mb-14"
+    />
+    <img
+      :src="content.flyerBack"
+      class="h-auto w-full md:w-1/2 mx-auto md:mb-14"
+    />
 
     <img :src="content.gif" class="h-auto mx-auto p-4 md:mb-14 bg-white" />
 
