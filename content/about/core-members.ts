@@ -21,10 +21,10 @@ export default {
         name: "André Oliveira",
         link: "https://linktr.ee/andreoliveira_cebola",
       },
-      {
-        name: "André Oliveira",
-        link: "https://linktr.ee/andreoliveira_cebola",
-      },
+      // {
+      //   name: "André Oliveira",
+      //   link: "https://linktr.ee/andreoliveira_cebola",
+      // },
       {
         name: "Priscila Nassar",
         link: "https://www.priscilanassar.com",
