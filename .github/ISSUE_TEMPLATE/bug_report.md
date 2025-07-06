@@ -1,8 +1,8 @@
 ## Description
 
-<!-- Describe the issue or feature request here -->
+<!-- Describe the issue here -->
 
-## Steps to Reproduce <!-- For bugs -->
+## Steps to Reproduce
 
 1. <!-- step 1 -->
 2. <!-- step 2 -->
