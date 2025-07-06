@@ -1,14 +1,20 @@
 <script setup lang="ts">
-import seedxbosque_patagonia from "@/content/methods/seedxbosque_patagonia";
+import c2p from "@/content/tools/c2p";
 
-const content = seedxbosque_patagonia.en;
+const content = c2p.en;
 </script>
 
 <template>
   <div
     class="w-full h-full flex flex-col items-start justify-start px-6 md:px-16 gap-10 md:gap-5 pt-4 pb-14 md:pt-10 overflow-auto"
   >
-    <h1 class="hidden md:block">C2P</h1>
+    <a
+      :href="content.credits[0].link"
+      target="_blank"
+      rel="noopener noreferrer"
+    >
+      <h1>{{ content.title }} - {{ content.credits[0].label }}</h1>
+    </a>
 
     <iframe
       src="https://cryptotext.code2pixels.xyz/"
