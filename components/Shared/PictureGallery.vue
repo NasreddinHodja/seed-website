@@ -64,6 +64,11 @@ const revealMore = () => {
   );
 };
 
+const toggleCollapse = () => {
+  if (isCollapsed.value) expand();
+  else collapse();
+};
+
 const updateColumnCount = () => {
   const el = masonryRef.value;
   if (!el) return;
@@ -92,25 +97,17 @@ onUnmounted(() => {
 
 <template>
   <div class="flex flex-col gap-10 p-6 border-[2px] white">
-    <div class="flex justify-between items-center">
+    <div class="flex justify-between items-center" @click="toggleCollapse()">
       <h2>{{ title }}</h2>
 
       <div class="flex gap-4 jutify-center">
         <span class="text-lg text-neutral-100"
           >({{ props.pictures.length }})</span
         >
-        <div
-          v-if="isCollapsed"
-          @click.stop="expand"
-          class="flex items-center justify-center"
-        >
+        <div v-if="isCollapsed" class="flex items-center justify-center">
           <Icon name="meteor-icons:chevron-down" class="w-6 h-6" />
         </div>
-        <div
-          v-else
-          @click.stop="collapse"
-          class="flex items-center justify-center"
-        >
+        <div v-else class="flex items-center justify-center">
           <Icon name="meteor-icons:chevron-up" class="w-6 h-6" />
         </div>
       </div>
