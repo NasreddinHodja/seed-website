@@ -33,25 +33,6 @@ const content = index.en;
 
     <img :src="content.gif" class="h-auto mx-auto p-4 md:mb-14 bg-white" />
 
-    <!-- <video
-      autoplay
-      muted
-      loop
-      playsinline
-      class="w-full md:w-2/3 h-full object-cover mx-auto"
-    >
-      <source :src="content.video" type="video/mp4" />
-    </video> -->
-
-    <!-- <SharedYTLazyEmbed
-      v-if="videoId"
-      :video-id="videoId"
-      class="w-full md:w-[700px] mx-auto"
-    /> -->
-
-    <SharedPictureGallery
-      :pictures="content.gallery.map((p) => ({ link: p.real, src: p.thumb }))"
-      class="w-full md:w-2/3 mx-auto"
-    />
+    <SharedPictureGallery :pictures="content.gallery" class="w-full mx-auto" />
   </div>
 </template>
