@@ -7,15 +7,18 @@ defineProps<{
   <div class="flex flex-col w-screen-md m-auto gap-24">
     <a
       v-for="piece in pieces"
+      :href="piece.link"
       target="_blank"
       rel="noopener noreferrer"
       class="flex flex-col items-end gap-2"
     >
-      <img :src="piece.src" class="m-auto" />
+      <SharedImageView :url="piece.src" class="m-auto" />
       <span v-if="piece.type === 'video'" class="bg-video text-black px-2"
         >VIDEO</span
       >
-      <span v-else-if="piece.type === 'picture'" class="bg-img text-black px-2"
+      <span
+        v-else-if="['picture', 'image'].includes(piece.type)"
+        class="bg-img text-black px-2"
         >IMG</span
       >
       <span
