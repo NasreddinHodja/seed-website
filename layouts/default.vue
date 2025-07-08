@@ -25,7 +25,7 @@ useHead({
         <LayoutsMobileHeader />
       </div>
 
-      <main class="w-full h-full flex-1 overflow-y-auto">
+      <main class="w-full h-full overflow-y-auto">
         <slot />
       </main>
     </div>
