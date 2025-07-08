@@ -1,5 +1,6 @@
 <script setup lang="ts">
 import index from "@/content/methods/pbh/index";
+import galleryContent from "@/content/methods/pbh/gallery";
 
 const lang = useCookie<"pt" | "en">("lang", { default: () => "en" });
 
@@ -25,13 +26,6 @@ const creditSections = [
     <SharedLangButton />
 
     <h1>{{ content.title }}</h1>
-
-    <NuxtLink
-      :to="content.gallery.link"
-      class="bg-white text-black text-xl font-bold px-2 w-fit"
-    >
-      {{ content.gallery.label }}
-    </NuxtLink>
 
     <a
       :href="content.flyer.link"
@@ -68,6 +62,11 @@ const creditSections = [
         {{ room.label }}
       </NuxtLink>
     </div>
+
+    <SharedPictureGallery
+      :pictures="galleryContent.en.pictures"
+      class="w-full"
+    />
 
     <h2>{{ content.credits.title }}</h2>
 

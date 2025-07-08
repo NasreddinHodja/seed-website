@@ -2,7 +2,6 @@ export default {
   pt: {
     title:
       "1. CHAPTER 1: PARALLEL BIOME HYPOTHESIS (CAPÍTULO 1: HIPÓTESE DE BIOMA PARALELO) - um possível primeiro capítulo:",
-    gallery: { link: "/methods/pbh/gallery", label: "> Fotos" },
     flyer: {
       link: "https://drive.google.com/file/d/1XBZflGo9IhonHbLFqST7ySV8ru4eckRn/view",
       src: r2Url("images", "pbh_flyer.jpg"),
@@ -427,7 +426,6 @@ export default {
   },
   en: {
     title: "1. CHAPTER 1: PARALLEL BIOME HYPOTHESIS - A POSSIBLE FIRST CHAPTER",
-    gallery: { link: "/methods/pbh/gallery", label: "> Pictures" },
     flyer: {
       link: "https://drive.google.com/file/d/1XBZflGo9IhonHbLFqST7ySV8ru4eckRn/view",
       src: r2Url("images", "pbh_flyer.jpg"),
