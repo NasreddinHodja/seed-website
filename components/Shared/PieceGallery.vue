@@ -21,6 +21,9 @@ defineProps<{
         class="bg-img text-black px-2"
         >IMG</span
       >
+      <span v-else-if="piece.type === 'gif'" class="bg-img text-black px-2"
+        >GIF</span
+      >
       <span
         v-else-if="piece.type === 'model'"
         class="bg-installation text-black px-2"

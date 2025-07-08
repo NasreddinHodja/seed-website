@@ -17,7 +17,7 @@ const content = zorav1.en;
       rel="noopener noreferrer"
       class="flex items-center justify-center"
     >
-      <img :src="content.flyer.image" class="md:w-2/3" />
+      <SharedImageView :url="content.flyer.image" class="md:w-2/3" />
     </a>
     <div class="flex flex-col gap-10">
       <p

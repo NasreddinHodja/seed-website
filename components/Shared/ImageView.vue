@@ -16,13 +16,8 @@ function handleLoad(e: Event) {
   emit("load", e);
 }
 
-function handleError(e: Event) {
-  isLoading.value = false;
-  emit("error", e);
-  console.error("Image load failed:", props.url);
-}
-
-onMounted(() => {
+onMounted(async () => {
+  await nextTick();
   if (img.value?.complete && img.value.naturalWidth > 0) {
     handleLoad(new Event("load"));
   }
@@ -31,14 +26,15 @@ onMounted(() => {
 
 <template>
   <div class="relative w-full h-auto">
-    <div v-if="isLoading" class="absolute inset-0 bg-black animate-pulse"></div>
+    <div
+      v-if="url === ''"
+      class="w-[600px] h-[600px] bg-gray-400 mx-auto flex items-center justify-center text-black"
+    >
+      NULL
+    </div>
 
-    <img
-      :src="url"
-      @load="handleLoad"
-      @error="handleError"
-      class="w-full h-auto"
-      :class="{ invisible: isLoading }"
-    />
+    <div v-else-if="isLoading" class="absolute inset-0 bg-black"></div>
+
+    <img ref="img" :src="url" @load="handleLoad" class="w-full h-auto" />
   </div>
 </template>
