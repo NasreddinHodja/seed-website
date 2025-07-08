@@ -24,7 +24,7 @@ onMounted(async () => {
 </script>
 
 <template>
-  <div class="relative">
+  <div class="relative h-full w-full flex">
     <div
       v-if="url === ''"
       class="w-[600px] h-[600px] bg-gray-400 mx-auto flex items-center justify-center text-black"
@@ -34,6 +34,11 @@ onMounted(async () => {
 
     <div v-else-if="isLoading" class="absolute inset-0 bg-black"></div>
 
-    <img ref="img" :src="url" @load="handleLoad" class="h-full object-fit" />
+    <img
+      ref="img"
+      :src="url"
+      @load="handleLoad"
+      class="object-contain mx-auto"
+    />
   </div>
 </template>
