@@ -1,10 +1,4 @@
 <script setup lang="ts">
-type Picture = {
-  originUrl: string;
-  thumbUrl: string;
-  link: string;
-};
-
 const props = withDefaults(
   defineProps<{
     pictures: Picture[];
@@ -96,7 +90,7 @@ onUnmounted(() => {
 </script>
 
 <template>
-  <div class="flex flex-col gap-10 p-6 border-[2px] white">
+  <div class="flex flex-col gap-10 p-4 md:p-6 border-[2px] white">
     <div class="flex justify-between items-center" @click="toggleCollapse()">
       <h2>{{ title }}</h2>
 
@@ -124,20 +118,13 @@ onUnmounted(() => {
             'flex flex-col gap-4 flex-1 visible': !isComputingColumns,
           }"
         >
-          <a
+          <SharedExpandableImageView
             v-for="picture in column"
             :key="picture.thumbUrl"
-            :href="picture.link"
-            target="_blank"
-            rel="noopener noreferrer"
-            class="block"
-          >
-            <SharedImageView
-              :url="picture.thumbUrl"
-              class="w-full"
-              @load="(e) => onImageLoad(picture.thumbUrl, e)"
-            />
-          </a>
+            :picture="picture"
+            class="w-full"
+            @load="(e) => onImageLoad(picture.thumbUrl, e)"
+          />
         </div>
       </div>
 

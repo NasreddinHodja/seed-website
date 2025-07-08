@@ -34,7 +34,9 @@ const content = index.en;
         </div>
       </div>
 
-      <div class="flex-1 flex flex-col items-start gap-2 border-4 border-white">
+      <div
+        class="flex-1 h-fit flex flex-col items-start gap-2 border-4 border-white"
+      >
         <img :src="content.image.src" class="w-full max-w-[900px]" />
       </div>
     </div>
