@@ -31,8 +31,15 @@ const videoId = extractYTVideoID(content.video);
       class="w-full md:w-[700px] mx-auto"
     />
 
-    <div class="grid grid-cols-1 md:grid-cols-3 gap-6">
-      <img v-for="picture in content.gallery" :src="picture" />
-    </div>
+    <SharedPictureGallery
+      :pictures="
+        content.gallery.map((url) => ({
+          originUrl: url,
+          thumbUrl: url,
+          link: url,
+        }))
+      "
+      class="w-full"
+    />
   </div>
 </template>
