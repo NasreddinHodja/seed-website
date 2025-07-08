@@ -14,6 +14,8 @@ const content = computed(() => index[lang.value]);
 
     <h1>{{ content.title }}</h1>
 
+    <img :src="content.image.src" class="mx-auto" />
+
     <div v-html="content.description" class="flex flex-col gap-6"></div>
 
     <SharedPieceList :works="content.pieces.works" />

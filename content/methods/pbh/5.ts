@@ -1,7 +1,7 @@
 export default {
   pt: {
     title: "5. ”ÁRVORE+MÁQUINA”",
-    image: r2Url("images", "pbh_room_5.png"),
+    image: r2Url("images", "pbh_room_5_flyer.jpg"),
     description: `
         <p>
           Conceitualmente, o projeto de exposição
@@ -56,7 +56,7 @@ export default {
   },
   en: {
     title: "5. ”ÁRVORE+MÁQUINA”",
-    image: r2Url("images", "pbh_room_5.png"),
+    image: r2Url("images", "pbh_room_5_flyer.jpg"),
     description: `
         <p>
           Conceitualmente, o projeto de exposição

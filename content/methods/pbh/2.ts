@@ -29,7 +29,7 @@ export default {
       `,
     ],
     image: {
-      src: r2Url("images", "pbh_room_2.png"),
+      src: r2Url("images", "pbh_room_2_flyer.jpg"),
       caption:
         "Estudo 3D inicial para a ambiência de “<< RESET <> LEARN <> DIVE >>”",
     },
@@ -318,9 +318,8 @@ export default {
       `,
     ],
     image: {
-      src: r2Url("images", "pbh_room_2.png"),
-      caption:
-        "Initial 3D study for the setting of “<< RESET <> LEARN <> DIVE >>”",
+      src: r2Url("images", "pbh_room_2_flyer.jpg"),
+      caption: "",
     },
     pieces: {
       title: "ARTISTS/CREATORS EXHIBITING IN “<< RESET <> LEARN <> DIVE >>”:",

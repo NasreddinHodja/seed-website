@@ -32,7 +32,7 @@ export default {
       `,
     ],
     image: {
-      src: r2Url("images", "pbh_room_1.png"),
+      src: r2Url("images", "pbh_room_1_flyer.jpg"),
       caption:
         "Estudos 3D iniciais para a ambientação de “DECENTER ROOM / EYE-LICKING”",
     },
@@ -415,9 +415,8 @@ export default {
       `,
     ],
     image: {
-      src: r2Url("images", "pbh_room_1.png"),
-      caption:
-        "Initial 3D studies for the setting of “DECENTER ROOM/EYE-LICKING”",
+      src: r2Url("images", "pbh_room_1_flyer.jpg"),
+      caption: "",
     },
     pieces: {
       title: "ARTISTS/CREATORS EXHIBITING IN “DECENTER ROOM/EYE-LICKING”:",

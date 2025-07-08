@@ -10,6 +10,6 @@ const content = index.en;
   >
     <h1>{{ content.title }}</h1>
 
-    <SharedPictureGallery :pictures="content.pictures" />
+    <SharedPictureGallery :pictures="content.pictures" class="w-full" />
   </div>
 </template>

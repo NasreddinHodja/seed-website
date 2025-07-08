@@ -1,6 +1,7 @@
 export default {
   pt: {
     title: "3. “LAN HOUSE CARETAKERS”",
+    image: r2Url("images", "pbh_room_3_flyer.jpg"),
     descriptionFirst: [
       `
         <p>Você se lembra dessa sensação?</p>
@@ -394,6 +395,7 @@ export default {
   },
   en: {
     title: "3. “LAN HOUSE CARETAKERS”",
+    image: r2Url("images", "pbh_room_3_flyer.jpg"),
     descriptionFirst: [
       `
         <p>Do you remember this feeling?</p>

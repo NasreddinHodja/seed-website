@@ -14,6 +14,7 @@ const content = computed(() => index[lang.value]);
 
     <h1>{{ content.title }}</h1>
 
+    <img :src="content.image" class="mx-auto" />
     <div class="flex w-full flex-col gap-10">
       <div v-html="content.descriptionFirst" class="flex flex-col gap-6"></div>
 
