@@ -82,7 +82,7 @@ const updateColumnCount = () => {
 
 const onImageLoad = (key: string, e: Event) => {
   const el = e.target as HTMLImageElement;
-  imageHeights[key] = el.offsetHeight;
+  if (el !== null) imageHeights[key] = el.offsetHeight;
 };
 
 onMounted(() => {
@@ -127,7 +127,7 @@ onUnmounted(() => {
           <a
             v-for="picture in column"
             :key="picture.thumbUrl"
-            :href="picture.thumbUrl"
+            :href="picture.link"
             target="_blank"
             rel="noopener noreferrer"
             class="block"
