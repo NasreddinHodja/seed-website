@@ -24,7 +24,7 @@ onMounted(async () => {
 </script>
 
 <template>
-  <div class="relative h-full w-full flex">
+  <div class="relative h-full flex">
     <div
       v-if="url === ''"
       class="w-[600px] h-[600px] bg-gray-400 mx-auto flex items-center justify-center text-black"
