@@ -24,8 +24,15 @@ const content = index.en;
 
     <img :src="content.flyer" class="md:w-1/2 mx-auto md:pb-14" />
 
-    <div class="grid grid-cols-1 md:grid-cols-3 gap-6">
-      <img v-for="picture in content.gallery" :src="picture" />
-    </div>
+    <SharedPictureGallery
+      :pictures="
+        content.gallery.map((url) => ({
+          originUrl: url,
+          thumbUrl: url,
+          link: url,
+        }))
+      "
+      class="w-full"
+    />
   </div>
 </template>

@@ -23,7 +23,7 @@ export default {
     ],
     image: {
       link: "/methods/cyberia",
-      src: r2Url("images", "cyberia_preview.jpg"),
+      src: r2Url("images", "cyberia_preview_thumb.webp"),
     },
     events: [
       { label: "#001", link: "/methods/cyberia/001" },
