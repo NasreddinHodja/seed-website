@@ -18,6 +18,6 @@ const credits = [content.credits.artists, content.credits.seed];
       <SharedCreditsList :credits="credit.members" />
     </div>
 
-    <SharedPictureGallery :pictures="content.gallery" />
+    <SharedPictureGallery :pictures="content.gallery" class="w-full" />
   </div>
 </template>
