@@ -24,21 +24,24 @@ onMounted(async () => {
 </script>
 
 <template>
-  <div class="relative flex">
-    <div
-      v-if="url === ''"
-      class="w-[600px] h-[600px] bg-gray-400 mx-auto flex items-center justify-center text-black"
-    >
-      NULL
+  <div class="inline-flex relative">
+    <!-- <div v-if="url === ''">
+      <div
+        class="w-[600px] h-[600px] bg-gray-400 flex items-center justify-center text-black"
+      >
+        NULL
+      </div>
+    </div> -->
+
+    <!-- <div v-else> -->
+    <div>
+      <img
+        ref="img"
+        :src="url"
+        @load="handleLoad"
+        class="max-h-screen max-w-screen object-scale-down"
+      />
+      <div v-if="isLoading" class="absolute inset-0 bg-black/50"></div>
     </div>
-
-    <div v-else-if="isLoading" class="absolute inset-0 bg-black"></div>
-
-    <img
-      ref="img"
-      :src="url"
-      @load="handleLoad"
-      class="object-contain mx-auto"
-    />
   </div>
 </template>
