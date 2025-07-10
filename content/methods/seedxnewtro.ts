@@ -8,11 +8,11 @@ export default {
     sets: {
       title: "DJ Sets",
       videos: [
-        "https://www.youtube.com/watch?v=pgYcniTM_eg&t=1678s",
-        "https://www.youtube.com/watch?v=g9jngQZV0HQ&t=1628s",
-        "https://www.youtube.com/watch?v=H5L2_7XMyfM&t=3325s",
-        "https://www.youtube.com/watch?v=I1nfUO6_1fI&t=237s",
-        "https://www.youtube.com/watch?v=QAqGALUe6k0&t=13s",
+        "https://www.youtube.com/watch?v=pgYcniTM_eg",
+        "https://www.youtube.com/watch?v=g9jngQZV0HQ",
+        "https://www.youtube.com/watch?v=H5L2_7XMyfM",
+        "https://www.youtube.com/watch?v=I1nfUO6_1fI",
+        "https://www.youtube.com/watch?v=QAqGALUe6k0",
       ],
     },
     description: [
