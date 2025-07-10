@@ -10,6 +10,24 @@ export default {
       link: "https://zora.co/collect/zora:0x9a4f365ec0b7176991c2023628bb5dcc00f4266b/112?referrer=0x52974e8f4bd9c71e3905bd90efa009e209125e32",
       label: "> MINT AFTERMOVIE ON ZORA",
     },
+    description: [
+      `
+      The first S.E.E.D’s activity in Minas Gerais (BR): an art residency that 
+      will take place in Belo Horizonte from October 30 to November 3.
+      `,
+      `
+      One of the most populated towns in Brazil, Belo Horizonte is the capital of the state of Minas Gerais 
+      and a place known for its strong, plural and effervescent cultural scene. The city is a spot for art, 
+      music, theater and gastronomy, offering a variety of cultural spaces ranging from theaters and museums 
+      to underground night activities, also having a strong urban art scene, with graffiti and murals adorning 
+      its streets.
+      `,
+      `
+      By breaking away from the SP-RJ axis and bringing together local talents and our residents, the goal is 
+      to promote a multidisciplinary collaboration environment, exploring different formats of media and art, 
+      thereby contributing to the support of independent artists through ZORA.
+      `,
+    ],
     credits: {
       artists: {
         title: "ARTISTS",

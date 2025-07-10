@@ -6,7 +6,7 @@ const content = index.en;
 
 <template>
   <div
-    class="w-full h-auto flex flex-col items-start justify-center px-6 md:px-16 gap-10 md:gap-16 pt-4 pb-14 md:pt-10 overflow-auto"
+    class="w-full h-auto flex flex-col items-start justify-center px-6 md:px-16 gap-10 md:gap-16 pt-4 pb-14 md:pt-16 overflow-auto"
   >
     <div v-for="option in content.options" class="flex w-full">
       <NuxtLink :to="option.url" class="block w-full">

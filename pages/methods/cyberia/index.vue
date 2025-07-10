@@ -6,7 +6,7 @@ const content = index.en;
 
 <template>
   <div
-    class="w-full h-auto flex flex-col items-start justify-start px-6 md:px-16 gap-6 md:gap-10 pt-4 pb-14 md:pt-10"
+    class="w-full h-auto flex flex-col items-start justify-start px-6 md:px-16 gap-6 md:gap-10 pt-4 pb-14 md:pt-16"
   >
     <h1>{{ content.title }}</h1>
 

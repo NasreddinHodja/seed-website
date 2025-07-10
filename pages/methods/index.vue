@@ -13,12 +13,6 @@ const content = index.en;
         <h1>
           <NuxtLink :to="option.url">{{ option.title }}</NuxtLink>
         </h1>
-        <!-- <h1>
-          <NuxtLink :to="option.url">{{ option.title }}</NuxtLink>
-        </h1>
-        <h1>
-          <NuxtLink :to="option.url">{{ option.title }}</NuxtLink>
-        </h1> -->
       </div>
     </div>
   </div>

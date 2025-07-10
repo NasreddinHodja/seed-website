@@ -7,7 +7,7 @@ const videoId = extractYTVideoID(content.video);
 
 <template>
   <div
-    class="w-full h-auto flex flex-col items-start justify-start px-6 md:px-16 gap-10 md:gap-18 pt-4 pb-14 md:pt-10"
+    class="w-full h-auto flex flex-col items-start justify-start px-6 md:px-16 gap-10 md:gap-18 pt-4 pb-14 md:pt-16"
   >
     <h1>{{ content.title }}</h1>
 

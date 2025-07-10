@@ -17,7 +17,7 @@ const credits = [
 
 <template>
   <div
-    class="w-full h-auto flex flex-col items-start justify-start px-6 md:px-16 gap-10 md:gap-28 pt-4 pb-14 md:pt-10 overflow-auto"
+    class="w-full h-auto flex flex-col items-start justify-start px-6 md:px-16 gap-10 md:gap-28 pt-4 pb-14 md:pt-16 overflow-auto"
   >
     <h1>{{ content.title }}</h1>
 
@@ -43,6 +43,12 @@ const credits = [
       >
         {{ content.video.label }}
       </a>
+    </div>
+
+    <div class="flex flex-col gap-6">
+      <div v-for="paragraph in content.description">
+        <p v-html="paragraph"></p>
+      </div>
     </div>
 
     <div v-for="credit in credits" class="flex flex-col gap-10">

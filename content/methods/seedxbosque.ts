@@ -3,7 +3,16 @@ export default {
     title: "SEED x Bosque Gracias Residency",
     flyer:
       "https://media.decentralized-content.com/-/rs:fit:800:800/f:webp/aHR0cHM6Ly9tYWdpYy5kZWNlbnRyYWxpemVkLWNvbnRlbnQuY29tL2lwZnMvYmFmeWJlaWdpdGU0ZXd2NXdreGtwNnV0dzRzYWZxajJxaWlqN3lraHMzeDZlcHIzb3JxeG9zZGpvbzQ",
-    link: "https://zora.co/collect/zora:0xd5fa58b8ce342c89e7864e01f18233fc07983e78",
+    links: [
+      {
+        label: "> On zora",
+        url: "https://zora.co/collect/zora:0xd5fa58b8ce342c89e7864e01f18233fc07983e78",
+      },
+      {
+        label: "> Aftermovie",
+        url: "https://zora.co/collect/zora:0xd5fa58b8ce342c89e7864e01f18233fc07983e78/132?referrer=0x0e3d44891e042b26088f91505b19627ae73b825b",
+      },
+    ],
     description: [
       `
       This joint residency will combine the ideals and goals from both
