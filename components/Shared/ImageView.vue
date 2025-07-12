@@ -25,16 +25,15 @@ onMounted(async () => {
 
 <template>
   <div class="inline-flex relative">
-    <!-- <div v-if="url === ''">
+    <div v-if="url === ''">
       <div
-        class="w-[600px] h-[600px] bg-gray-400 flex items-center justify-center text-black"
+        class="w-[600px] h-[600px] bg-gray-900 flex items-center justify-center text-white"
       >
         NULL
       </div>
-    </div> -->
+    </div>
 
-    <!-- <div v-else> -->
-    <div>
+    <div v-else>
       <img
         ref="img"
         :src="url"
