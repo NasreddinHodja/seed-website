@@ -20,9 +20,7 @@ const creditSections = [
 </script>
 
 <template>
-  <div
-    class="w-full flex flex-col items-start justify-center px-6 md:px-16 gap-10 md:gap-14 pt-4 pb-14 md:pt-16 overflow-auto"
-  >
+  <SharedScrollablePost>
     <SharedLangButton />
 
     <h1>{{ content.title }}</h1>
@@ -190,5 +188,5 @@ const creditSections = [
         >>{{ content.artifactVideo.label }}</a
       >
     </div>
-  </div>
+  </SharedScrollablePost>
 </template>

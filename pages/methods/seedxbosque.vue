@@ -6,9 +6,7 @@ const credits = [content.credits.artists, content.credits.seed];
 </script>
 
 <template>
-  <div
-    class="w-full h-auto flex flex-col items-start justify-start px-6 md:px-16 gap-10 md:gap-16 md:pt-16 overflow-auto"
-  >
+  <SharedScrollablePost>
     <h1>{{ content.title }}</h1>
 
     <div class="flex flex-col gap-4">
@@ -37,5 +35,5 @@ const credits = [content.credits.artists, content.credits.seed];
     </div>
 
     <SharedPictureGallery :pictures="content.gallery" class="w-full" />
-  </div>
+  </SharedScrollablePost>
 </template>

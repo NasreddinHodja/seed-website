@@ -5,9 +5,7 @@ const content = index.en;
 </script>
 
 <template>
-  <div
-    class="w-full h-auto flex flex-col items-start justify-start px-6 md:px-16 gap-10 md:gap-26 pt-4 pb-14 md:pt-16"
-  >
+  <SharedScrollablePost>
     <h1>{{ content.title }}</h1>
 
     <!-- <div class="flex flex-wrap gap-4 md:pb-10">
@@ -34,12 +32,6 @@ const content = index.en;
       <source :src="content.video" type="video/mp4" />
     </video>
 
-    <!-- <SharedYTLazyEmbed
-      v-if="videoId"
-      :video-id="videoId"
-      class="w-full md:w-[700px] mx-auto"
-    /> -->
-
     <SharedPictureGallery :pictures="content.gallery" class="w-full" />
-  </div>
+  </SharedScrollablePost>
 </template>

@@ -9,9 +9,7 @@ const parts = content.parts.map((part) => ({
 </script>
 
 <template>
-  <div
-    class="w-full h-auto flex flex-col items-start justify-center px-6 md:px-16 gap-10 md:gap-16 pt-4 pb-14 md:pt-16 overflow-auto"
-  >
+  <SharedScrollablePost>
     <h1>{{ content.title }}</h1>
     <div class="flex flex-col gap-6">
       <a
@@ -33,5 +31,5 @@ const parts = content.parts.map((part) => ({
         class="w-full md:w-[700px] mx-auto"
       />
     </div>
-  </div>
+  </SharedScrollablePost>
 </template>

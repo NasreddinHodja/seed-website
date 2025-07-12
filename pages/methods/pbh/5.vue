@@ -7,15 +7,13 @@ const content = computed(() => index[lang.value]);
 </script>
 
 <template>
-  <div
-    class="w-full flex flex-col items-start justify-center px-6 md:px-16 gap-10 md:gap-14 pt-4 pb-14 md:pt-16 overflow-auto"
-  >
+  <SharedScrollablePost>
     <SharedLangButton />
 
     <h1>{{ content.title }}</h1>
 
-    <img :src="content.image" class="w-full md:w-1/2 mx-auto" />
+    <img :src="content.image" class="w-full md:w-2/3 mx-auto" />
 
     <div v-html="content.description" class="flex flex-col gap-6"></div>
-  </div>
+  </SharedScrollablePost>
 </template>

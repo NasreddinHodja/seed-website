@@ -6,9 +6,7 @@ const videoId = extractYTVideoID(content.video);
 </script>
 
 <template>
-  <div
-    class="w-full h-auto flex flex-col items-start justify-start px-6 md:px-16 gap-10 md:gap-26 pt-4 pb-14 md:pt-16"
-  >
+  <SharedScrollablePost>
     <h1>{{ content.title }}</h1>
 
     <div class="flex flex-wrap gap-4 md:pb-10">
@@ -41,5 +39,5 @@ const videoId = extractYTVideoID(content.video);
       "
       class="w-full"
     />
-  </div>
+  </SharedScrollablePost>
 </template>
