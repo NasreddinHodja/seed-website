@@ -15,7 +15,7 @@ const content = zorav1.en;
       :href="content.flyer.link"
       target="_blank"
       rel="noopener noreferrer"
-      class="flex items-center justify-center"
+      class="flex items-center justify-center mx-auto"
     >
       <SharedImageView :url="content.flyer.image" class="md:w-2/3" />
     </a>
