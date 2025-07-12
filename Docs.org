@@ -78,15 +78,69 @@ yarn lserve
 
 The structure of the =pages/= directory determines the URL paths, and the =content/= directory mirrors this structure.
 
-*For every =.vue= file in =pages/= there is a corresponding =.ts= file in =content/= that holds its contents*
++ For every =.vue= file in =pages/= there is a corresponding =.ts= file in =content/= that holds its contents!
+  - Example: =content/methods/pbh/index.ts= is the content for =pages/methods/pbh/index.vue=
 
-*** Content files
-!!! TODO !!!
+** Content files
+Our content files are Typescript files that define an object that represents a page's content.
+
+*** Objects
+An object is a way to represent a "thing" by describing its characteristics.
+
++ It has attributes that describe the thing's details.
++ These attributes (called *keys*) can hold simple values - like text or numbers - or even other objects.
++ An object looks like a list of key-value pairs, where each key is the attribute’s name, and the value describes that attribute.
+
+Example:
+#+begin_src typescript
+export default {
+  title: "About Us",
+  description: "We’re a group of friends building something cool.",
+  backgroundVideo: "[some-url]",
+  credits: [
+    {
+      artist: "Nasuredine",
+      link: "nasuredine.com",
+    },
+    {
+      artist: "Daniel Younguero",
+      link: "danidani.com",
+    },
+    {
+      artist: "Gabriel",
+      link: "gabriel.com",
+    },
+  ]
+}
+#+end_src
+
++ =title= is a key and its value is ="About Us"=
++ =credit='s value is a *list* (enclosed =[= and =]=)
++ inside =credit='s list we can see that we have 3 objects (encosed by ={= and =}=)
++ Each of those objects describes one artist, with:
+  - an artist =name= to be displayed
+  - a =link= that will be clickable in the page
+
+*So overall, the rules are*:
++ ={}= -> defines an object
++ =[]= -> defines a list (of objects, in this case)
++ =key: value= -> describes a piece of data
++ all entries are separated by =,=
+
+*This syntax must be respected - otherwise the website won't build.*
+
+**** Code Formatting
+Good code formatting is essential to keep the code understandable and easy to modify.
+
+*Indentation* means adding spaces at the start of a line to show its level inside the structure. This shapes the visual structure of our code.
+
+Every time you open a new multiline object or list, you should add 2 spaces of indentation for each level inside it. *Usually, your code editor will do this automatically.*
 
 * Content change guide
-(Read [[* Content Isolation][Content Isolation]] before)
+** Basic concepts
+Make sure to read [[* Content Isolation][Content isolation]].
 
-** Git
+*** Git
 Git is like a time machine for your project.
 
 It keeps track of every change you (or anyone) make to the website's files.
@@ -96,7 +150,7 @@ With Git you can:
 + See who changed what and when
 + Work together without overwriting each other's work
 
-*** Commits
+**** Commits
 Git doesn’t automatically track every little change you make.
 You have to tell it when you’re ready to save a snapshot.
 
@@ -111,7 +165,7 @@ Examples:
 + Changing a page title:
   - I’ll open the corresponding file in =content/=, update the title, and then make a commit with a message like: "fixed title for page X".
 
-*** Branches
+**** Branches
 Our project lives on a branch called =main= — like the main road where everything eventually ends up.
 
 A *branch* is a separate path where you can work on something new without messing up the main version.
@@ -123,7 +177,7 @@ Branches can:
   - This is how we update a branch with new changes from another.
   - For example, when a new feature/fix is ready, we merge its branch back into =dev= to include the new work.
 
-**** Branches in our project
+***** Branches in our project
 We use branches to keep things organized and safe.
 
 These are the main ones we'll work with:
@@ -146,7 +200,7 @@ Over time, =dev= will have new changes that =main= doesn’t know about yet - =d
 
 When it's time to publish those changes to the website, the project owner will merge =dev= into =main=.
 
-**** Naming branches
+***** Naming branches
 When you create a new branch, it's important to give it a name that clearly describes what you're working on.
 This helps everyone understand what the branch is for - without needing to open it.
 
@@ -158,8 +212,7 @@ Examples:
 + =update-footer-links= - making content changes
 + =issue-23-fix-login-bug= - referencing a task or GitHub issue
 
-
-** GitHub
+*** GitHub
 GitHub is an online platform that hosts our Git project, so we can work together and share updates.
 
 It also gives us tools like:
@@ -179,7 +232,7 @@ Once your project is hosted on GitHub, it lives in two places:
 
 Think of it like working on a shared Google Doc — except each person has their own offline copy, and you sync with GitHub to stay up to date.
 
-*** Pull requets
+**** Pull requets
 A *pull request* (PR) is a request to merge a branch to another.
 It is a safety step so that people can review the changes before updating important branches.
 
@@ -187,31 +240,109 @@ It is a safety step so that people can review the changes before updating import
 - This helps catch mistakes and makes sure everything looks good before updating important branches like =dev= or =main=
 - On GitHub, you’ll create a pull request when you’re done with your work and ready to bring your branch back into =dev=
 
-** GitHub Desktop
-GitHub Desktop is a visual app that makes using Git easy - no terminal needed.
+*** GitHub Desktop
+[[https://desktop.github.com/download/][GitHub Desktop]] is a visual app that makes using Git easy - no terminal needed.
 
 *It's is a GUI client for Git.*
 
 With it, you can:
 + Open the project
 + See which files you’ve changed
-+ Write a commit message
++ Make a commit and write its message
 + Push your changes to GitHub
 + Pull new updates from others
 
-** Making a change to the project
-1. *Pull from remote*:
+** Steps
+First, [[* Setup][make sure you have everything setup]].
+
+1. [[* Pull from remote][Pull from remote]]:
   - Make sure your local project is up to date with the latest changes
-2. *Create a branch*:
-  - Create a branch from =dev= and give it a clear, descriptive name based on what you're working on.
-3. *Make your changes*:
-  - Edit the files you need — usually in the content/ folder for text and content updates.
-4. *Commit your changes*
+2. [[* Create a branch][Create a branch]]:
+  - Create a new branch from =dev= and give it a clear, descriptive name based on what you're working on.
+3. [[* Make your changes][Make your changes]]:
+  - Edit the files you need - usually in =content/= for text and content updates.
+4. [[* Commit your changes][Commit your changes]]
   - Once the issue seems solved, commit with a short, clear message explaining what you did.
-5. *Push to remote*
+5. [[* Push to remote][Push to remote]]
   - Send your branch (and commits) to GitHub. This will create the branch on the remote project.
-6. *Open a pull request*
+6. [[*Open a pull request][Open a pull request]]
   - On GitHub, create a pull request from your branch into dev, so others can review and merge your work.
+
+** Setup
+*** Git and Github
++ Github
+  - Make a github account
++ Github Desktop
+  - download, install, and log into you're github account in Githut Desktop
++ Clone the repository
+  1. Go to *File* -> *Clone Repository*
+  2. Click on the "URL" tab
+  3. Paste the repository URL into the field (e.g.: https://github.com/nasreddinhodja/seed-website)
+  4. Choose a local folder where you want to save the project
+  5. Click "Clone"
+
+*** Code Editing
+Code is just text - and it can be edited with any text editor.
+
+But some editors are specially made for code and include features that make editing easier, safer, and more comfortable.
+
+One option is [[https://vscodium.com/][VSCodium]] - a free, open-source version of VS Code, with no tracking.
+
+*OBS*: Recommended Plugins for VSCodium:
++ *Prettier* - formats our code
++ *ESLint* - highlights mistakes or syntax issues as you type
+
+** Pull from remote
+Before making any changes, you should pull the latest updates from GitHub to make sure your project is up to date.
+
+This prevents conflicts and ensures you're working with the most recent version of the files.
+
+1. Open GitHub Desktop
+2. In the top-left, make sure your repository is selected
+3. At the top, click the button labeled "Fetch origin"
+4. If new changes exist, it will become "Pull origin"
+5. Click "Pull origin" to update your local project
+
+Now you're synced with the remote version and ready to create a branch.
+
+** Create a branch
+1. Open GitHub Desktop
+2. Make sure your repository is selected (top left)
+3. In the top toolbar, click on the current branch name (it might say main or dev)
+4. In the dropdown, click "New Branch"
+5. Give your branch a clear, short name
+6. Make sure the base branch is set to =dev=
+7. Click "Create Branch"
+
+** Make your changes
+(See [[* Content files][Content files]])
+1. Open VSCodium
+2. Click File -> Open Folder...
+3. Choose the folder where you cloned the project
+4. Navigate to the file you want to change and make your changes
+5. save with =Ctrl+S=!
+
+** Commit your changes
+1. Open GitHub Desktop
+2. You’ll see a list of files that were changed (on the left)
+3. Click on each file to preview your changes
+4. At the bottom left, write a short commit message describing what you did
+5. Click the "Commit to [your branch name]" button
+
+** Push to remote
+1. In GitHub Desktop, look at the top toolbar
+2. You’ll see a button that says “Push origin” — click it
+3. GitHub Desktop will send your commits to the matching branch on GitHub
+
+** Open a pull request
+1. Go to the project on GitHub website
+2. GitHub will often show a message:
+   - "Your recently pushed branch had recent pushes..."
+   - Click "Compare & pull request"
+3. If you don’t see the message, go to the "Pull requests" tab at the top of the repo, then click "New pull request"
+4. Set the base branch to =dev= and the compare branch to the one you created
+5. Write a short title and optional description explaining what you changed
+6. Click "Create pull request"
 
 * Back-end
 ** Cloudflare R2 Object Storage
