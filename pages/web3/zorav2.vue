@@ -32,7 +32,10 @@ const ytVideoId = extractYTVideoID(zorav2Gallery.en.video);
       rel="noopener noreferrer"
       class="flex items-center justify-center w-full"
     >
-      <SharedImageView :url="content.flyer.image" class="md:w-2/3 m-auto" />
+      <SharedImageView
+        :url="content.flyer.image"
+        class="max-w-full md:w-2/3 m-auto"
+      />
     </a>
 
     <div class="flex flex-col gap-10">
