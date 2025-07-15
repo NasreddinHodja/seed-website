@@ -2,7 +2,7 @@
 
 Rework of the S.E.E.D. art collective website using web development tools from this century.
 
-- [Project Documentation](Docs.org)
+- [Project Documentation](https://seed-website-docs.vercel.app/)
 
 ## Setup
 
