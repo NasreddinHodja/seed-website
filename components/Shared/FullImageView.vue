@@ -42,7 +42,7 @@ onMounted(async () => {
     <SharedImageView
       :url="url"
       @click.stop=""
-      class="max-h-full mx-2 my-2"
+      class="mx-2 my-2"
       @load="handleLoad"
     />
   </div>
