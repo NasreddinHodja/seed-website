@@ -12,52 +12,28 @@ const content = index.en;
       class="flex flex-col xl:grid xl:grid-cols-2 gap-10 px-6 md:px-16 pb-14 md:pb-16 pt-10 md:pt-16"
     >
       <div class="flex flex-col gap-10">
-        <div class="flex flex-col gap-4">
-          <a
-            :href="content.whoAreWe.link"
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            <h1 class="bg-black w-fit">{{ content.whoAreWe.title }}</h1></a
-          >
-          <p class="bg-black text-xl">
-            {{ content.whoAreWe.text }}
-          </p>
-        </div>
+        <AboutInfoCard
+          :title="content.whoAreWe.title"
+          :link="content.whoAreWe.link"
+          :text="content.whoAreWe.text"
+        />
 
-        <div class="flex flex-col gap-4">
+        <div class="flex flex-col">
           <NuxtLink :to="content.coreMembers.link">
             <h1 class="bg-black w-fit">{{ content.coreMembers.title }}</h1>
           </NuxtLink>
         </div>
 
-        <div class="flex flex-col gap-4 w-fit">
-          <h1 class="bg-black w-fit">{{ content.contactUs.label }}</h1>
-          <div class="flex flex-col gap-0.5 bg-black w-fit">
-            <div
-              v-for="contact in content.contactUs.links"
-              class="font-header text-neutral-300"
-            >
-              <a
-                v-if="contact.url !== null"
-                :href="contact.url"
-                target="_blank"
-                rel="noopener noreferrer"
-                >{{ contact.label }}</a
-              >
-              <div v-else>{{ contact.label }}</div>
-            </div>
-          </div>
-        </div>
+        <AboutContactCard
+          :title="content.contactUs.label"
+          :links="content.contactUs.links"
+        />
       </div>
-      <div class="flex flex-col gap-4">
-        <div class="flex flex-col gap-4">
-          <h1 class="bg-black w-fit">{{ content.seedPhilosophy.title }}</h1>
-          <p class="bg-black text-xl">
-            {{ content.seedPhilosophy.text }}
-          </p>
-        </div>
-      </div>
+
+      <AboutInfoCard
+        :title="content.seedPhilosophy.title"
+        :text="content.whoAreWe.text"
+      />
     </div>
   </div>
 </template>
