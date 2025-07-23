@@ -12,25 +12,10 @@ const contacts = content.contacts.links;
       <div
         class="w-full flex flex-col lg:flex-row lg:justify-between gap-2 pb-14 md:pb-2"
       >
-        <div class="flex flex-col gap-1">
-          <div class="font-header text-sm">{{ content.contacts.label }}</div>
-
-          <div class="flex flex-col gap-0.5">
-            <div
-              v-for="contact in contacts"
-              class="font-header text-xs text-gray-400"
-            >
-              <a
-                v-if="contact.url !== null"
-                :href="contact.url"
-                target="_blank"
-                rel="noopener noreferrer"
-                >{{ contact.label }}</a
-              >
-              <div v-else>{{ contact.label }}</div>
-            </div>
-          </div>
-        </div>
+        <HomeContactCard
+          :title="content.contacts.label"
+          :contacts="content.contacts.links"
+        />
         <div class="font-header text-xs text-gray-400 flex lg:items-end gap-1">
           by
           <a
