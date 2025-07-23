@@ -290,7 +290,7 @@ export default {
     },
   },
   en: {
-    title: "1. DECENTER ROOM/EYE-LICKING",
+    title: "2. “<< RESET <> LEARN <> DIVE >>”",
     description: [
       `
       Unlike the other environments, populated by multiple small screens,

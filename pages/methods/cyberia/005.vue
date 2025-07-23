@@ -6,28 +6,14 @@ const content = index.en;
 
 <template>
   <LayoutsScrollablePost>
-    <h1>{{ content.title }}</h1>
+    <SharedScrollablePostHeader :title="content.title" />
 
-    <div class="flex flex-wrap gap-4 md:pb-6">
-      <a
-        v-for="artist in content.lineup"
-        :href="artist.link"
-        target="_blank"
-        rel="noopener noreferrer"
-        class="text-xl font-bold bg-white text-black px-2"
-      >
-        {{ artist.name }}
-      </a>
+    <div class="flex flex-col md:flex-row justify-center gap-2">
+      <SharedFlyerImage :src="content.flyerFront" class="max-w-1/3" />
+      <SharedFlyerImage :src="content.flyerBack" />
     </div>
 
-    <img
-      :src="content.flyerFront"
-      class="h-auto w-full md:w-1/2 mx-auto md:mb-14"
-    />
-    <img
-      :src="content.flyerBack"
-      class="h-auto w-full md:w-1/2 mx-auto md:mb-14"
-    />
+    <SharedShowLineUp :artists="content.lineup" />
 
     <img :src="content.gif" class="h-auto mx-auto p-4 md:mb-14 bg-white" />
 

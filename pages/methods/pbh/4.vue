@@ -8,13 +8,11 @@ const content = computed(() => index[lang.value]);
 
 <template>
   <LayoutsScrollablePost>
-    <SharedLangButton />
+    <SharedScrollablePostHeader :title="content.title" langButton />
 
-    <h1>{{ content.title }}</h1>
+    <SharedFlyerImage :src="content.image.src" class="md:w-2/3 mx-auto" />
 
-    <img :src="content.image.src" class="mx-auto md:w-2/3" />
-
-    <div v-html="content.description" class="flex flex-col gap-6"></div>
+    <SharedPostDescription :paragraphs="[content.description]" />
 
     <SharedPieceList :works="content.pieces.works" />
   </LayoutsScrollablePost>

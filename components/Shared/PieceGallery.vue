@@ -3,6 +3,7 @@ defineProps<{
   pieces: { type: string; src: string; link: string }[];
 }>();
 </script>
+
 <template>
   <div class="flex flex-col m-auto gap-6 md:gap-24">
     <a

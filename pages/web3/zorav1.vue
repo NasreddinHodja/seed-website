@@ -6,25 +6,18 @@ const content = zorav1.en;
 
 <template>
   <LayoutsScrollablePost>
-    <a :href="content.link" target="_blank" rel="noopener noreferrer">
-      <h1>{{ content.title }}</h1>
-    </a>
+    <SharedScrollablePostHeader
+      :title="content.title"
+      :mainLink="content.link"
+    />
 
-    <a
-      :href="content.flyer.link"
-      target="_blank"
-      rel="noopener noreferrer"
-      class="flex items-center justify-center mx-auto"
-    >
-      <SharedImageView :url="content.flyer.image" class="md:w-2/3" />
-    </a>
+    <SharedFlyerImage
+      :src="content.flyer.image"
+      :link="content.flyer.link"
+      class="md:w-2/3"
+    />
 
-    <div class="flex flex-col gap-10">
-      <p
-        v-for="paragraph in content.descriptionParagraphs"
-        v-html="paragraph"
-      ></p>
-    </div>
+    <SharedPostDescription :paragraphs="content.descriptionParagraphs" />
 
     <figure class="flex flex-col gap-4 md:w-2/3 m-auto">
       <video controls>

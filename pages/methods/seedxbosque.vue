@@ -7,27 +7,14 @@ const credits = [content.credits.artists, content.credits.seed];
 
 <template>
   <LayoutsScrollablePost>
-    <h1>{{ content.title }}</h1>
+    <SharedScrollablePostHeader
+      :title="content.title"
+      :relatedLinks="content.links"
+    />
 
-    <div class="flex flex-col gap-4">
-      <a
-        v-for="link in content.links"
-        :href="link.url"
-        class="px-2 text-lg bg-white text-black font-bold"
-      >
-        {{ link.label }}
-      </a>
-    </div>
+    <SharedFlyerImage :src="content.flyer" class="md:max-w-2/3 mx-auto" />
 
-    <div class="flex flex-col items-end mx-auto gap-4">
-      <img :src="content.flyer" class="md:max-w-[500px]" />
-    </div>
-
-    <div class="flex flex-col gap-6">
-      <div v-for="paragraph in content.description">
-        <p v-html="paragraph"></p>
-      </div>
-    </div>
+    <SharedPostDescription :paragraphs="content.description" />
 
     <div v-for="credit in credits" class="flex flex-col gap-10">
       <h2>{{ credit.title }}</h2>

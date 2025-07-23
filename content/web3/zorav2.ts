@@ -2,7 +2,7 @@ export default {
   pt: {
     title: "S.E.E.D. ZORA COLLECTIVE DROP V2.0",
     link: "https://zora.co/collect/zora:0x9568c682acd03836c99580a56fd504a9eed851d9",
-    links: [{ label: "> ONBOARDING", to: "/web3/zora-onboarding" }],
+    links: [{ label: "> ONBOARDING", url: "/web3/zora-onboarding" }],
     flyer: {
       image:
         "https://scontent-iad4-1.choicecdn.com/-/rs:fill:2000:2000/g:ce/f:webp/aHR0cHM6Ly9tYWdpYy5kZWNlbnRyYWxpemVkLWNvbnRlbnQuY29tL2lwZnMvYmFmeWJlaWE3bXFtN2FoenNzaHlnNjVkaXp1dHU0aW1ubzJldXlqYzJ2bXdhajQ0cWV3aHdmeXh2YTQ",
@@ -233,7 +233,7 @@ export default {
   en: {
     title: "S.E.E.D. ZORA COLLECTIVE DROP V2.0",
     link: "https://zora.co/collect/zora:0x9568c682acd03836c99580a56fd504a9eed851d9",
-    links: [{ label: "> ONBOARDING", to: "/web3/zora-onboarding" }],
+    links: [{ label: "> ONBOARDING", url: "/web3/zora-onboarding" }],
     flyer: {
       image:
         "https://scontent-iad4-1.choicecdn.com/-/rs:fill:2000:2000/g:ce/f:webp/aHR0cHM6Ly9tYWdpYy5kZWNlbnRyYWxpemVkLWNvbnRlbnQuY29tL2lwZnMvYmFmeWJlaWE3bXFtN2FoenNzaHlnNjVkaXp1dHU0aW1ubzJldXlqYzJ2bXdhajQ0cWV3aHdmeXh2YTQ",

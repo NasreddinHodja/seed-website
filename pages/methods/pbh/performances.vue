@@ -8,13 +8,13 @@ const content = computed(() => performances[lang.value]);
 
 <template>
   <LayoutsScrollablePost>
-    <SharedLangButton />
-
-    <h1>{{ content.title }}</h1>
+    <SharedScrollablePostHeader :title="content.title" langButton />
 
     <div v-html="content.description" class="flex flex-col gap-6"></div>
 
-    <h2>{{ content.pieces.title }}</h2>
-    <SharedPieceList :works="content.pieces.works" />
+    <SharedPieceList
+      :works="content.pieces.works"
+      :title="content.pieces.title"
+    />
   </LayoutsScrollablePost>
 </template>

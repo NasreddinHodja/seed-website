@@ -17,16 +17,13 @@ const credits = [
 
 <template>
   <LayoutsScrollablePost>
-    <h1>{{ content.title }}</h1>
+    <SharedScrollablePostHeader :title="content.title" />
 
-    <a
-      :href="content.flyer.link"
-      target="_blank"
-      rel="noopener noreferrer"
-      class="flex items-center justify-center w-full"
-    >
-      <img :src="content.flyer.src" class="md:max-w-[500px]" />
-    </a>
+    <SharedFlyerImage
+      :link="content.flyer.link"
+      :src="content.flyer.src"
+      class="md:max-w-[500px] mx-auto"
+    />
 
     <div v-if="videoId" class="flex flex-col items-end mx-auto gap-2">
       <SharedYTLazyEmbed
@@ -43,11 +40,7 @@ const credits = [
       </a>
     </div>
 
-    <div class="flex flex-col gap-6">
-      <div v-for="paragraph in content.description">
-        <p v-html="paragraph"></p>
-      </div>
-    </div>
+    <SharedPostDescription :paragraphs="content.description" />
 
     <div v-for="credit in credits" class="flex flex-col gap-10">
       <h2>{{ credit.title }}</h2>

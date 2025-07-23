@@ -21,35 +21,25 @@ const creditSections = [
 
 <template>
   <LayoutsScrollablePost>
-    <SharedLangButton />
+    <SharedScrollablePostHeader :title="content.title" langButton />
 
-    <h1>{{ content.title }}</h1>
+    <SharedFlyerImage
+      :link="content.flyer.link"
+      :src="content.flyer.src"
+      class="mx-auto md:w-2/3"
+    />
 
-    <a
-      :href="content.flyer.link"
-      target="_blank"
-      rel="noopener noreferrer"
-      class="flex items-center justify-center w-full"
-    >
-      <img :src="content.flyer.src" class="md:w-1/2 mx-auto" />
-    </a>
+    <SharedPostDescription :paragraphs="content.description" />
 
-    <div class="flex flex-col gap-10">
-      <p v-for="paragraph in content.description" v-html="paragraph"></p>
-    </div>
+    <SharedPostDescription
+      :title="content.expoGuide.title"
+      :paragraphs="content.expoGuide.description"
+    />
 
-    <h2>{{ content.expoGuide.title }}</h2>
-
-    <div class="flex flex-col gap-10">
-      <p
-        v-for="paragraph in content.expoGuide.description"
-        v-html="paragraph"
-      ></p>
-    </div>
-
-    <h3>{{ content.expoGuide.ambients.title }}</h3>
-
-    <p v-html="content.expoGuide.ambients.description"></p>
+    <SharedPostDescription
+      :title="content.expoGuide.ambients.title"
+      :paragraphs="[content.expoGuide.ambients.description]"
+    />
 
     <div class="flex flex-col gap-4">
       <NuxtLink
@@ -66,9 +56,10 @@ const creditSections = [
       class="w-full"
     />
 
-    <h2>{{ content.credits.title }}</h2>
-
-    <p v-html="content.credits.description"></p>
+    <SharedPostDescription
+      :title="content.credits.title"
+      :paragraphs="[content.credits.description]"
+    />
 
     <div class="flex flex-col gap-8">
       <h3>{{ content.credits.seed.title }}</h3>

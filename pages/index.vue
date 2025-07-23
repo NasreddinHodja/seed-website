@@ -8,6 +8,7 @@ const contacts = content.contacts.links;
 <template>
   <div class="w-full h-full flex flex-col items-center justify-center">
     <img class="px-10 pb-32" :src="content.backgroundImage" />
+
     <div class="absolute bottom-0 left-0 w-full flex flex-col px-4">
       <div
         class="w-full flex flex-col lg:flex-row lg:justify-between gap-2 pb-14 md:pb-2"
@@ -16,6 +17,7 @@ const contacts = content.contacts.links;
           :title="content.contacts.label"
           :contacts="content.contacts.links"
         />
+
         <div class="font-header text-xs text-gray-400 flex lg:items-end gap-1">
           by
           <a

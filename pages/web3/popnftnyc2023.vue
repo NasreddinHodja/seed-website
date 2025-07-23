@@ -7,7 +7,7 @@ const videoId = extractYTVideoID(content.video);
 
 <template>
   <LayoutsScrollablePost>
-    <h1>{{ content.title }}</h1>
+    <SharedScrollablePostHeader :title="content.title" />
 
     <SharedYTLazyEmbed
       v-if="videoId"

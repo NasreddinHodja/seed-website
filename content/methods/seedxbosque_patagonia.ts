@@ -1,12 +1,11 @@
 export default {
   en: {
     title: "SEED x Bosque Gracia Patagonia Residency",
-    banner: r2Url("images", "seedxbosque_patagonia_banner.png"),
     people: r2Url("images", "seedxbosque_patagonia_people_001.jpg"),
     peopleB: r2Url("images", "seedxbosque_patagonia_people_002.jpg"),
     peopleC: r2Url("images", "seedxbosque_patagonia_people_003.jpg"),
     link: {
-      label: "on OBJKT",
+      label: "> on OBJKT",
       url: "https://objkt.com/collections/KT1KqH4hLhRRy9CAMjCXoTVDt1xPN9N6w9Sb",
     },
     description: [

@@ -8,9 +8,9 @@ const setVideos = content.sets.videos.map((video) => extractYTVideoID(video));
 
 <template>
   <LayoutsScrollablePost>
-    <h1>{{ content.title }}</h1>
+    <SharedScrollablePostHeader :title="content.title" />
 
-    <img :src="content.flyer" class="md:max-w-[600px] mx-auto" />
+    <SharedFlyerImage :src="content.flyer" class="md:w-2/3 mx-auto" />
 
     <SharedYTLazyEmbed
       v-if="aftermovieVideoId"
@@ -22,9 +22,7 @@ const setVideos = content.sets.videos.map((video) => extractYTVideoID(video));
       <p v-for="line in content.manifesto">{{ line }}</p>
     </div>
 
-    <div class="flex flex-col w-full gap-10">
-      <p v-for="paragraph in content.description">{{ paragraph }}</p>
-    </div>
+    <SharedPostDescription :paragraphs="content.description" />
 
     <h2>{{ content.sets.title }}</h2>
     <div
