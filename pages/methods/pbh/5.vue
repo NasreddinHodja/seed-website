@@ -7,7 +7,7 @@ const content = computed(() => index[lang.value]);
 </script>
 
 <template>
-  <SharedScrollablePost>
+  <LayoutsScrollablePost>
     <SharedLangButton />
 
     <h1>{{ content.title }}</h1>
@@ -15,5 +15,5 @@ const content = computed(() => index[lang.value]);
     <img :src="content.image" class="w-full md:w-2/3 mx-auto" />
 
     <div v-html="content.description" class="flex flex-col gap-6"></div>
-  </SharedScrollablePost>
+  </LayoutsScrollablePost>
 </template>

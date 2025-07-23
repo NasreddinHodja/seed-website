@@ -16,7 +16,7 @@ const credits = [
 </script>
 
 <template>
-  <SharedScrollablePost>
+  <LayoutsScrollablePost>
     <h1>{{ content.title }}</h1>
 
     <a
@@ -55,5 +55,5 @@ const credits = [
     </div>
 
     <SharedPictureGallery :pictures="content.gallery" class="w-full" />
-  </SharedScrollablePost>
+  </LayoutsScrollablePost>
 </template>

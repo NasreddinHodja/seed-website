@@ -7,7 +7,7 @@ const setVideos = content.sets.videos.map((video) => extractYTVideoID(video));
 </script>
 
 <template>
-  <SharedScrollablePost>
+  <LayoutsScrollablePost>
     <h1>{{ content.title }}</h1>
 
     <img :src="content.flyer" class="md:max-w-[600px] mx-auto" />
@@ -39,5 +39,5 @@ const setVideos = content.sets.videos.map((video) => extractYTVideoID(video));
     </div>
 
     <img :src="content.people" class="mx-auto" />
-  </SharedScrollablePost>
+  </LayoutsScrollablePost>
 </template>

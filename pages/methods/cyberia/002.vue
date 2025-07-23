@@ -6,7 +6,7 @@ const videoId = extractYTVideoID(content.video);
 </script>
 
 <template>
-  <SharedScrollablePost>
+  <LayoutsScrollablePost>
     <h1>{{ content.title }}</h1>
 
     <div class="flex flex-wrap gap-4 md:pb-10">
@@ -28,5 +28,5 @@ const videoId = extractYTVideoID(content.video);
       :video-id="videoId"
       class="w-full md:w-[700px] mx-auto"
     />
-  </SharedScrollablePost>
+  </LayoutsScrollablePost>
 </template>

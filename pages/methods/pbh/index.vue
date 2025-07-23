@@ -20,7 +20,7 @@ const creditSections = [
 </script>
 
 <template>
-  <SharedScrollablePost>
+  <LayoutsScrollablePost>
     <SharedLangButton />
 
     <h1>{{ content.title }}</h1>
@@ -188,5 +188,5 @@ const creditSections = [
         >>{{ content.artifactVideo.label }}</a
       >
     </div>
-  </SharedScrollablePost>
+  </LayoutsScrollablePost>
 </template>

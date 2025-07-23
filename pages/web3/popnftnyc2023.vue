@@ -6,7 +6,7 @@ const videoId = extractYTVideoID(content.video);
 </script>
 
 <template>
-  <SharedScrollablePost>
+  <LayoutsScrollablePost>
     <h1>{{ content.title }}</h1>
 
     <SharedYTLazyEmbed
@@ -26,5 +26,5 @@ const videoId = extractYTVideoID(content.video);
         <span>_</span><span>{{ piece.label }}</span>
       </a>
     </div>
-  </SharedScrollablePost>
+  </LayoutsScrollablePost>
 </template>

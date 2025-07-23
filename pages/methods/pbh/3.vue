@@ -7,7 +7,7 @@ const content = computed(() => index[lang.value]);
 </script>
 
 <template>
-  <SharedScrollablePost>
+  <LayoutsScrollablePost>
     <SharedLangButton />
 
     <h1>{{ content.title }}</h1>
@@ -42,5 +42,5 @@ const content = computed(() => index[lang.value]);
     </div>
 
     <SharedPieceList :works="content.pieces.works" />
-  </SharedScrollablePost>
+  </LayoutsScrollablePost>
 </template>

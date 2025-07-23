@@ -5,7 +5,7 @@ const content = zorav1.en;
 </script>
 
 <template>
-  <SharedScrollablePost>
+  <LayoutsScrollablePost>
     <a :href="content.link" target="_blank" rel="noopener noreferrer">
       <h1>{{ content.title }}</h1>
     </a>
@@ -50,5 +50,5 @@ const content = zorav1.en;
     </div>
 
     <SharedPieceGallery :pieces="content.pieces" />
-  </SharedScrollablePost>
+  </LayoutsScrollablePost>
 </template>

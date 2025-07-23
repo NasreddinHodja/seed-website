@@ -9,7 +9,7 @@ const ytVideoId = extractYTVideoID(zorav2Gallery.en.video);
 </script>
 
 <template>
-  <SharedScrollablePost>
+  <LayoutsScrollablePost>
     <SharedLangButton />
 
     <a :href="content.link" target="_blank" rel="noopener noreferrer">
@@ -58,5 +58,5 @@ const ytVideoId = extractYTVideoID(zorav2Gallery.en.video);
       :pictures="zorav2Gallery.en.pictures"
       class="w-full"
     />
-  </SharedScrollablePost>
+  </LayoutsScrollablePost>
 </template>

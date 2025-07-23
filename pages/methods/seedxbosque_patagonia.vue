@@ -5,7 +5,7 @@ const content = seedxbosque_patagonia.en;
 </script>
 
 <template>
-  <SharedScrollablePost>
+  <LayoutsScrollablePost>
     <h1>{{ content.title }}</h1>
 
     <img :src="content.banner" class="w-full md:max-w-[1000px] mx-auto" />
@@ -30,5 +30,5 @@ const content = seedxbosque_patagonia.en;
 
     <img :src="content.peopleB" class="mx-auto" />
     <img :src="content.peopleC" class="mx-auto" />
-  </SharedScrollablePost>
+  </LayoutsScrollablePost>
 </template>

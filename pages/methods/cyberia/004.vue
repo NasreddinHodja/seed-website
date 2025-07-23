@@ -5,7 +5,7 @@ const content = index.en;
 </script>
 
 <template>
-  <SharedScrollablePost>
+  <LayoutsScrollablePost>
     <h1>{{ content.title }}</h1>
 
     <!-- <div class="flex flex-wrap gap-4 md:pb-10">
@@ -33,5 +33,5 @@ const content = index.en;
     </video>
 
     <SharedPictureGallery :pictures="content.gallery" class="w-full" />
-  </SharedScrollablePost>
+  </LayoutsScrollablePost>
 </template>
