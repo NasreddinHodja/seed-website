@@ -46,8 +46,11 @@ export default {
     ],
     drLolliVideo: {
       src: r2Url("videos", "zorav1_DRLOLLI_COMPRESSEDD.webm"),
-      link: "https://zora.co/collect/zora:0x38045fbf52060c88dc61ea3b5972865ea1316a72/2?referrer=0x52974E8f4BD9C71E3905bd90EFa009e209125e32",
-      text: `Welcome To S.E.E.D. Experiments Laborathory <sub>(click for HD)</sub>`,
+      text: `Welcome To S.E.E.D. Experiments Laborathory`,
+      link: {
+        url: "https://zora.co/collect/zora:0x38045fbf52060c88dc61ea3b5972865ea1316a72/2?referrer=0x52974E8f4BD9C71E3905bd90EFa009e209125e32",
+        label: "click for HD",
+      },
     },
     seedHeart: {
       src: r2Url("images", "zorav1_GIF_COMPRESSED_SEEDHEART.gif"),

@@ -14,24 +14,18 @@ const content = zorav1.en;
     <SharedFlyerImage
       :src="content.flyer.image"
       :link="content.flyer.link"
-      class="md:w-2/3"
+      class="md:w-2/3 mx-auto"
     />
 
     <SharedPostDescription :paragraphs="content.descriptionParagraphs" />
 
-    <figure class="flex flex-col gap-4 md:w-2/3 m-auto">
-      <video controls>
-        <source :src="content.drLolliVideo.src" type="video/webm" />
-      </video>
-      <figcaption>
-        <a
-          :href="content.drLolliVideo.link"
-          target="_blank"
-          v-html="content.drLolliVideo.text"
-        >
-        </a>
-      </figcaption>
-    </figure>
+    <SharedFigure
+      video
+      :src="content.drLolliVideo.src"
+      :caption="content.drLolliVideo.text"
+      :link="content.drLolliVideo.link"
+      class="md:w-2/3"
+    />
 
     <a :href="content.seedHeart.link" target="_blank" class="w-full">
       <img :src="content.seedHeart.src" class="m-auto md:w-1/3" />
