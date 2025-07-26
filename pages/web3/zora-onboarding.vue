@@ -10,17 +10,11 @@ const parts = content.parts.map((part) => ({
 
 <template>
   <LayoutsScrollablePost>
-    <SharedScrollablePostHeader :title="content.title" />
+    <SharedScrollablePostHeader
+      :title="content.title"
+      :relatedLinks="content.links"
+    />
 
-    <div class="flex flex-col gap-6">
-      <SharedLink
-        v-for="link in content.links"
-        :url="link.url"
-        class="bg-white text-black text-xl px-2 w-fit"
-      >
-        >{{ link.label }}
-      </SharedLink>
-    </div>
     <div v-for="part in parts" class="flex w-full flex-col gap-10">
       <h2>{{ part.title }}</h2>
 
