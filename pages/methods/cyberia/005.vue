@@ -6,10 +6,10 @@ const content = index.en;
 
 <template>
   <LayoutsScrollablePost>
-    <SharedScrollablePostHeader :title="content.title" />
+    <SharedPostHeader :title="content.title" />
 
-    <div class="flex flex-col md:flex-row justify-center gap-2">
-      <SharedFlyerImage :src="content.flyerFront" class="max-w-1/3" />
+    <div class="flex flex-col md:flex-row gap-2">
+      <SharedFlyerImage :src="content.flyerFront" />
       <SharedFlyerImage :src="content.flyerBack" />
     </div>
 

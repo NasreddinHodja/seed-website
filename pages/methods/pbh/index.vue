@@ -21,7 +21,7 @@ const creditSections = [
 
 <template>
   <LayoutsScrollablePost>
-    <SharedScrollablePostHeader :title="content.title" langButton />
+    <SharedPostHeader :title="content.title" langButton />
 
     <SharedFlyerImage
       :link="content.flyer.link"

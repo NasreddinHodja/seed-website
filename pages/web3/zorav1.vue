@@ -6,10 +6,7 @@ const content = zorav1.en;
 
 <template>
   <LayoutsScrollablePost>
-    <SharedScrollablePostHeader
-      :title="content.title"
-      :mainLink="content.link"
-    />
+    <SharedPostHeader :title="content.title" :mainLink="content.link" />
 
     <SharedFlyerImage
       :src="content.flyer.image"

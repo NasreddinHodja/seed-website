@@ -4,6 +4,7 @@ withDefaults(
     title?: string;
     titleLevel?: 2 | 3;
     paragraphs: string[];
+    tight?: boolean;
   }>(),
   {
     titleLevel: 2,
@@ -16,7 +17,7 @@ withDefaults(
     <h2 v-if="title && titleLevel === 2">{{ title }}</h2>
     <h3 v-if="title && titleLevel === 3">{{ title }}</h3>
 
-    <div class="flex flex-col gap-10">
+    <div class="flex flex-col" :class="{ 'gap-10': !tight, 'gap-4': tight }">
       <p v-for="paragraph in paragraphs" v-html="paragraph"></p>
     </div>
   </div>

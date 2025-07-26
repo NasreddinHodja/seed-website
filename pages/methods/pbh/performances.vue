@@ -8,7 +8,7 @@ const content = computed(() => performances[lang.value]);
 
 <template>
   <LayoutsScrollablePost>
-    <SharedScrollablePostHeader :title="content.title" langButton />
+    <SharedPostHeader :title="content.title" langButton />
 
     <div v-html="content.description" class="flex flex-col gap-6"></div>
 

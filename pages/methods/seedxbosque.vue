@@ -7,10 +7,7 @@ const credits = [content.credits.artists, content.credits.seed];
 
 <template>
   <LayoutsScrollablePost>
-    <SharedScrollablePostHeader
-      :title="content.title"
-      :relatedLinks="content.links"
-    />
+    <SharedPostHeader :title="content.title" :relatedLinks="content.links" />
 
     <SharedFlyerImage :src="content.flyer" class="md:max-w-2/3 mx-auto" />
 

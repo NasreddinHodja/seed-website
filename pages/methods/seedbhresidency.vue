@@ -17,7 +17,7 @@ const credits = [
 
 <template>
   <LayoutsScrollablePost>
-    <SharedScrollablePostHeader :title="content.title" />
+    <SharedPostHeader :title="content.title" />
 
     <SharedFlyerImage
       :link="content.flyer.link"

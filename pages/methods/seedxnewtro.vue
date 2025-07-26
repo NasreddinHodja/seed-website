@@ -8,7 +8,7 @@ const setVideos = content.sets.videos.map((video) => extractYTVideoID(video));
 
 <template>
   <LayoutsScrollablePost>
-    <SharedScrollablePostHeader :title="content.title" />
+    <SharedPostHeader :title="content.title" />
 
     <SharedFlyerImage :src="content.flyer" class="md:w-2/3 mx-auto" />
 

@@ -8,7 +8,7 @@ const content = computed(() => index[lang.value]);
 
 <template>
   <LayoutsScrollablePost>
-    <SharedScrollablePostHeader :title="content.title" langButton />
+    <SharedPostHeader :title="content.title" langButton />
 
     <div class="w-full mx-auto flex flex-col gap-4">
       <SharedFlyerImage :src="content.image.src" class="md:w-2/3 mx-auto" />

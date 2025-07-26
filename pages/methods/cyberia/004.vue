@@ -6,7 +6,7 @@ const content = index.en;
 
 <template>
   <LayoutsScrollablePost>
-    <SharedScrollablePostHeader :title="content.title" />
+    <SharedPostHeader :title="content.title" />
 
     <!-- <div class="flex flex-wrap gap-4 md:pb-10">
       <SharedLink

@@ -6,7 +6,7 @@ const content = index.en;
 
 <template>
   <LayoutsScrollablePost>
-    <SharedScrollablePostHeader :title="content.title" />
+    <SharedPostHeader :title="content.title" />
 
     <SharedFlyerImage :src="content.flyer" class="mx-auto md:w-2/3" />
 

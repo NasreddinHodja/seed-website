@@ -6,10 +6,7 @@ const content = seedxbosque_patagonia.en;
 
 <template>
   <LayoutsScrollablePost>
-    <SharedScrollablePostHeader
-      :title="content.title"
-      :relatedLinks="[content.link]"
-    />
+    <SharedPostHeader :title="content.title" :relatedLinks="[content.link]" />
 
     <img :src="content.people" class="mx-auto" />
 

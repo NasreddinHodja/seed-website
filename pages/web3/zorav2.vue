@@ -10,7 +10,7 @@ const ytVideoId = extractYTVideoID(zorav2Gallery.en.video);
 
 <template>
   <LayoutsScrollablePost>
-    <SharedScrollablePostHeader
+    <SharedPostHeader
       :title="content.title"
       :mainLink="content.link"
       :relatedLinks="content.links"
