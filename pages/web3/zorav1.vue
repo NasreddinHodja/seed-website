@@ -17,10 +17,10 @@ const content = zorav1.en;
     <SharedPostDescription :paragraphs="content.descriptionParagraphs" />
 
     <SharedCaptionedFigure
-      video
       :src="content.drLolliVideo.src"
       :caption="content.drLolliVideo.text"
       :link="content.drLolliVideo.link"
+      type="video"
       class="md:w-2/3"
     />
 
@@ -28,10 +28,11 @@ const content = zorav1.en;
       <img :src="content.seedHeart.src" />
     </SharedLink>
 
-    <div class="flex flex-col gap-14">
-      <h2>{{ content.artists.title }}</h2>
-      <SharedCreditsList :credits="content.artists.artists" />
-    </div>
+    <SharedCreditsSection
+      :credits="[
+        { title: content.artists.title, names: content.artists.artists },
+      ]"
+    />
 
     <SharedPieceGallery :pieces="content.pieces" />
   </LayoutsScrollablePost>

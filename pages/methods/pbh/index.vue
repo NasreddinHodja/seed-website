@@ -61,124 +61,25 @@ const creditSections = [
       :paragraphs="[content.credits.description]"
     />
 
-    <div class="flex flex-col gap-8">
-      <h3>{{ content.credits.seed.title }}</h3>
+    <SharedCreditsSection
+      :credits="
+        creditSections.map((c) => ({ title: c.title, names: c.members }))
+      "
+    />
 
-      <SharedCreditsList :names="content.credits.seed.members" />
-    </div>
+    <SharedPostDescription
+      :title="content.thanks.title"
+      :paragraphs="content.thanks.description"
+    />
 
-    <div class="flex flex-col gap-8">
-      <h3>{{ content.credits.artists.title }}</h3>
-
-      <SharedCreditsList :names="content.credits.artists.artists" />
-
-      <h4>{{ content.credits.artists.hivemind.title }}</h4>
-
-      <SharedCreditsList :names="content.credits.artists.hivemind.members" />
-
-      <h4>{{ content.credits.artists.seed.title }}</h4>
-
-      <SharedCreditsList :names="content.credits.artists.seed.members" />
-    </div>
-
-    <div v-for="section in creditSections" class="flex flex-col gap-8">
-      <h3>{{ section.title }}</h3>
-
-      <SharedCreditsList :names="section.members" />
-    </div>
-
-    <div class="flex flex-col gap-8">
-      <h3>{{ content.credits.visualId.title }}</h3>
-
-      <h4>{{ content.credits.visualId.credits.graphicProject.title }}</h4>
-      <SharedCreditsList
-        :names="content.credits.visualId.credits.graphicProject.members"
-      />
-
-      <h4>{{ content.credits.visualId.credits.motionDesign.title }}</h4>
-      <SharedCreditsList
-        :names="content.credits.visualId.credits.motionDesign.members"
-      />
-
-      <h4>{{ content.credits.visualId.credits.videoEditing.title }}</h4>
-      <SharedCreditsList
-        :names="content.credits.visualId.credits.videoEditing.members"
-      />
-    </div>
-
-    <div class="flex flex-col gap-8">
-      <h3>{{ content.credits.expoGuide.title }}</h3>
-
-      <h4>{{ content.credits.expoGuide.credits.writting.title }}</h4>
-      <SharedCreditsList
-        :names="content.credits.expoGuide.credits.writting.members"
-      />
-
-      <h4>{{ content.credits.expoGuide.credits.presentationTexts.title }}</h4>
-      <SharedCreditsList
-        :names="content.credits.expoGuide.credits.presentationTexts.members"
-      />
-
-      <h4>{{ content.credits.expoGuide.credits.roomsTexts.title }}</h4>
-      <SharedCreditsList
-        :names="content.credits.expoGuide.credits.roomsTexts.members"
-      />
-
-      <h4>{{ content.credits.expoGuide.credits.proofReading.title }}</h4>
-      <SharedCreditsList
-        :names="content.credits.expoGuide.credits.proofReading.members"
-      />
-
-      <h4>{{ content.credits.expoGuide.credits.layout.title }}</h4>
-      <SharedCreditsList
-        :names="content.credits.expoGuide.credits.layout.members"
-      />
-    </div>
-
-    <div class="flex flex-col gap-8">
-      <h3>{{ content.credits.records.title }}</h3>
-
-      <h4>{{ content.credits.records.credits.photography.title }}</h4>
-      <SharedCreditsList
-        :names="content.credits.records.credits.photography.members"
-      />
-
-      <h4>{{ content.credits.records.credits.video.title }}</h4>
-      <SharedCreditsList
-        :names="content.credits.records.credits.video.members"
-      />
-
-      <h4>{{ content.credits.records.credits.editing.title }}</h4>
-      <SharedCreditsList
-        :names="content.credits.records.credits.editing.members"
-      />
-
-      <h4>{{ content.credits.records.credits.writting.title }}</h4>
-      <SharedCreditsList
-        :names="content.credits.records.credits.writting.members"
-      />
-
-      <h4>{{ content.credits.records.credits.layout.title }}</h4>
-      <SharedCreditsList
-        :names="content.credits.records.credits.layout.members"
-      />
-    </div>
-
-    <div class="flex flex-col gap-8">
-      <h2>{{ content.thanks.title }}</h2>
-      <p v-for="paragraph in content.thanks.description" v-html="paragraph"></p>
-    </div>
-
-    <div class="w-full md:w-1/2 mx-auto">
-      <video controls class="w-full">
-        <source :src="content.artifactVideo.src" type="video/mp4" />
-      </video>
-      <SharedLink
-        :url="content.artifactVideo.link"
-        class="text-xl bg-white text-black font-bold"
-      >
-        >{{ content.artifactVideo.label }}
-      </SharedLink>
-    </div>
+    <SharedCaptionedFigure
+      type="video"
+      :src="content.artifactVideo.src"
+      :link="{
+        url: content.artifactVideo.link,
+        label: content.artifactVideo.label,
+      }"
+      class="w-full md:w-1/2 mx-auto"
+    />
   </LayoutsScrollablePost>
 </template>

@@ -27,10 +27,11 @@ const ytVideoId = extractYTVideoID(zorav2Gallery.en.video);
 
     <SharedPieceGallery :pieces="content.pieces" />
 
-    <div class="flex flex-col gap-14">
-      <h2>{{ content.artists.title }}</h2>
-      <SharedCreditsList :credits="content.artists.artists" />
-    </div>
+    <SharedCreditsSection
+      :credits="[
+        { title: content.artists.title, names: content.artists.artists },
+      ]"
+    />
 
     <SharedYTLazyEmbed v-if="ytVideoId" :video-id="ytVideoId" />
 

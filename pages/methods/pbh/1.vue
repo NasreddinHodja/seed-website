@@ -10,12 +10,12 @@ const content = computed(() => index[lang.value]);
   <LayoutsScrollablePost>
     <SharedPostHeader :title="content.title" langButton />
 
-    <div class="w-full mx-auto flex flex-col gap-4">
-      <SharedFlyerImage :src="content.image.src" class="md:w-2/3 mx-auto" />
-      <h4>
-        {{ content.image.caption }}
-      </h4>
-    </div>
+    <SharedCaptionedFigure
+      :src="content.image.src"
+      :caption="content.image.caption"
+      class="w-full md:w-2/3 mx-auto"
+      type="image"
+    />
 
     <SharedPostDescription :paragraphs="content.description" />
 

@@ -11,7 +11,8 @@
     "preview": "nuxi preview",
     "postinstall": "nuxi prepare",
     "format": "prettier --write .",
-    "format:check": "prettier --check ."
+    "format:check": "prettier --check .",
+    "lint": "npx vue-tsc --noEmit && npx eslint --ext .js,.ts,.jsx,.tsx,.vue ."
   },
   "dependencies": {
     "@nuxt/icon": "1.10.3",

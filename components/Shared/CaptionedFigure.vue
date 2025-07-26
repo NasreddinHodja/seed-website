@@ -1,22 +1,29 @@
 <script setup lang="ts">
-defineProps<{
-  src: string;
-  caption: string;
-  link?: { url: string; label: string };
-  video?: boolean;
-}>();
+withDefaults(
+  defineProps<{
+    src: string;
+    caption?: string;
+    link?: { url: string; label: string };
+    type?: "image" | "video" | "youtube";
+  }>(),
+  {
+    type: "image",
+  }
+);
 </script>
 
 <template>
   <figure class="flex flex-col gap-4 m-auto">
-    <video v-if="video" controls>
+    <video v-if="type === 'video'" controls>
       <source :src="src" type="video/webm" />
     </video>
 
-    <img v-else :href="src" />
+    <SharedYTLazyEmbed v-else-if="type === 'youtube'" :videoId="src" />
+
+    <img v-else :src="src" />
 
     <figcaption class="flex flex-col gap-1">
-      <span class="italic">{{ caption }}</span>
+      <span v-if="caption" class="italic">{{ caption }}</span>
       <SharedLink v-if="link" :url="link.url" class="w-fit underline">
         {{ link.label }}
       </SharedLink>
