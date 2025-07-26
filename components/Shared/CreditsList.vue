@@ -18,17 +18,17 @@ const linkedNames = computed(() => props.names as LinkedName[]);
 
 <template>
   <div class="border-l-4 border-white pl-10">
-    <div v-if="isLinked(names)">
+    <div v-if="isLinked(names)" class="flex flex-col gap-4">
       <SharedLink
         v-for="credit in linkedNames"
         :url="credit.link"
-        class="text-xl w-fit"
+        class="text-xl w-fit italic"
       >
         {{ credit.label }}
       </SharedLink>
     </div>
-    <div v-else class="flex flex-col gap-6">
-      <span v-for="name in onlyNames">{{ name }}</span>
+    <div v-else class="flex flex-col gap-4">
+      <span v-for="name in onlyNames" class="text-xl italic">{{ name }}</span>
     </div>
   </div>
 </template>
