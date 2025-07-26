@@ -24,10 +24,10 @@ onMounted(async () => {
 </script>
 
 <template>
-  <div class="inline-flex relative">
-    <div v-if="url === ''">
+  <div class="inline-flex relative w-full md:w-unset justify-center">
+    <div v-if="url === ''" class="w-full md:w-unset">
       <div
-        class="md:w-[600px] h-[400px] md:h-[600px] bg-gray-900 flex items-center justify-center text-white"
+        class="w-full md:w-[600px] h-[400px] md:h-[600px] bg-gray-900 flex items-center justify-center text-white"
       >
         NULL
       </div>
