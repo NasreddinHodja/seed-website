@@ -20,14 +20,12 @@ const contacts = content.contacts.links;
 
         <div class="font-header text-xs text-gray-400 flex lg:items-end gap-1">
           by
-          <a
+          <SharedLink
+            url="https://github.com/NasreddinHodja"
             class="text-white"
-            href="https://github.com/NasreddinHodja"
-            target="_blank"
-            rel="noopener noreferrer"
           >
-            nas</a
-          >
+            nas
+          </SharedLink>
         </div>
       </div>
     </div>

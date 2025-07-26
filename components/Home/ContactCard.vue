@@ -14,13 +14,9 @@ defineProps<{
         v-for="contact in contacts"
         class="font-header text-xs text-gray-400"
       >
-        <a
-          v-if="contact.url !== null"
-          :href="contact.url"
-          target="_blank"
-          rel="noopener noreferrer"
-          >{{ contact.label }}</a
-        >
+        <SharedLink v-if="contact.url !== null" :url="contact.url">
+          {{ contact.label }}
+        </SharedLink>
         <div v-else>{{ contact.label }}</div>
       </div>
     </div>

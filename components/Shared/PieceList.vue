@@ -19,11 +19,9 @@ defineProps<{
     <div class="flex flex-col w-screen-md gap-12">
       <div v-for="work in works" class="flex flex-col gap-4">
         <span class="italic font-semibold text-2xl">{{ work.artist }}</span>
-        <a
+        <SharedLink
           v-for="piece in work.pieces"
-          :href="piece.src"
-          target="_blank"
-          rel="noopener noreferrer"
+          :url="piece.src"
           class="flex flex-row flex-wrap gap-2 items-center"
         >
           <span class="text-lg">- {{ piece.name }}</span>
@@ -82,7 +80,7 @@ defineProps<{
             class="bg-performance text-black px-2"
             >INSTALLATION</span
           >
-        </a>
+        </SharedLink>
       </div>
     </div>
   </div>

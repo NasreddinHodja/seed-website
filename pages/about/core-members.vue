@@ -14,9 +14,9 @@ const content = coreMembers.en;
         :key="member.name"
         class="shrink-0"
       >
-        <a :href="member.link" target="_blank" rel="noopener noreferrer">
+        <SharedLink :url="member.link">
           <h2>{{ member.name }}</h2>
-        </a>
+        </SharedLink>
       </div>
     </div>
     <div class="flex flex-col flex-wrap gap-10 md:w-96">
@@ -26,9 +26,9 @@ const content = coreMembers.en;
         :key="member.name"
         class="shrink-0"
       >
-        <a :href="member.link" target="_blank" rel="noopener noreferrer">
+        <SharedLink :url="member.link">
           <h3>{{ member.name }}</h3>
-        </a>
+        </SharedLink>
       </div>
     </div>
   </div>

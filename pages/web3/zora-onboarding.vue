@@ -13,15 +13,13 @@ const parts = content.parts.map((part) => ({
     <SharedScrollablePostHeader :title="content.title" />
 
     <div class="flex flex-col gap-6">
-      <a
+      <SharedLink
         v-for="link in content.links"
-        :href="link.url"
-        target="_blank"
-        rel="noopener noreferrer"
+        :url="link.url"
         class="bg-white text-black text-xl px-2 w-fit"
       >
         >{{ link.label }}
-      </a>
+      </SharedLink>
     </div>
     <div v-for="part in parts" class="flex w-full flex-col gap-10">
       <h2>{{ part.title }}</h2>

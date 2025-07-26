@@ -10,9 +10,9 @@ const content = index.en;
     class="flex flex-col w-screen h-auto gap-10 md:gap-16 px-6 md:px-16 pt-4 md:pt-16 pb-14 items-start md:items-start"
   >
     <h1>{{ content.title }}</h1>
-    <a class="bg-white" :href="content.link.url" target="_blank" rel="noopene">
+    <SharedLink class="bg-white" :url="content.link.url">
       <h2 class="text-black px-2">{{ content.link.label }}</h2>
-    </a>
+    </SharedLink>
     <!-- <div v-if="videoId" class="m-auto flex flex-wrap items-end gap-4">
       <SharedYTLazyEmbed :video-id="videoId" class="w-full md:w-96" />
     </div> -->

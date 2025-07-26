@@ -11,9 +11,9 @@ const videoId = extractYTVideoID(content.video);
 
     <div v-if="videoId" class="m-auto flex flex-wrap items-end gap-4">
       <SharedYTLazyEmbed :video-id="videoId" class="w-full md:w-96" />
-      <a class="bg-white text-black font-xl" :href="content.link.url">{{
-        content.link.label
-      }}</a>
+      <SharedLink class="bg-white text-black font-xl" :url="content.link.url">
+        {{ content.link.label }}
+      </SharedLink>
     </div>
 
     <img class="m-auto" id="shirts" :src="content.gif" />

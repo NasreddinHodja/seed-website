@@ -30,14 +30,9 @@ const credits = [
         :video-id="videoId"
         class="w-full md:w-[700px] mx-auto"
       />
-      <a
-        :href="content.video.link"
-        target="_blank"
-        rel="noopener noreferrer"
-        class="bg-white text-black px-2"
-      >
+      <SharedLink :url="content.video.link" class="bg-white text-black px-2">
         {{ content.video.label }}
-      </a>
+      </SharedLink>
     </div>
 
     <SharedPostDescription :paragraphs="content.description" />

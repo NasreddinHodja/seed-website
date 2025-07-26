@@ -173,11 +173,12 @@ const creditSections = [
       <video controls class="w-full">
         <source :src="content.artifactVideo.src" type="video/mp4" />
       </video>
-      <a
-        :href="content.artifactVideo.link"
+      <SharedLink
+        :url="content.artifactVideo.link"
         class="text-xl bg-white text-black font-bold"
-        >>{{ content.artifactVideo.label }}</a
       >
+        >{{ content.artifactVideo.label }}
+      </SharedLink>
     </div>
   </LayoutsScrollablePost>
 </template>

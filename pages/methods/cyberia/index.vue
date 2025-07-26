@@ -21,14 +21,9 @@ const content = index.en;
             v-for="event in content.events"
             class="text-xl font-bold text-black bg-white px-2"
           >
-            <a
-              v-if="!event.link.startsWith('/')"
-              :href="event.link"
-              target="_blank"
-              rel="noopener noreferrer"
-            >
+            <SharedLink v-if="!event.link.startsWith('/')" :url="event.link">
               {{ event.label }}
-            </a>
+            </SharedLink>
             <NuxtLink v-else :to="event.link">{{ event.label }}</NuxtLink>
           </div>
         </div>

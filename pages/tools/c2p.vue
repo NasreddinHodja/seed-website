@@ -8,13 +8,9 @@ const content = c2p.en;
   <div
     class="w-full h-full flex flex-col items-start justify-start px-6 md:px-16 gap-10 md:gap-5 pt-4 pb-14 md:pt-16 overflow-auto"
   >
-    <a
-      :href="content.credits[0].link"
-      target="_blank"
-      rel="noopener noreferrer"
-    >
+    <SharedLink :url="content.credits[0].link">
       <h1>{{ content.title }} - {{ content.credits[0].label }}</h1>
-    </a>
+    </SharedLink>
 
     <iframe
       src="https://cryptotext.code2pixels.xyz/"

@@ -11,14 +11,9 @@ defineProps<{
   <div class="flex flex-col gap-10">
     <SharedLangButton v-if="langButton" />
 
-    <a
-      v-if="mainLink"
-      :href="mainLink"
-      target="_blank"
-      rel="noopener noreferrer"
-    >
+    <SharedLink v-if="mainLink" :url="mainLink">
       <h1>{{ title }}</h1>
-    </a>
+    </SharedLink>
     <h1 v-else>{{ title }}</h1>
 
     <div v-if="relatedLinks" class="flex flex-col gap-6">

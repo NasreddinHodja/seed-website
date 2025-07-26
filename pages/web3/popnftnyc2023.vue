@@ -16,15 +16,13 @@ const videoId = extractYTVideoID(content.video);
     />
 
     <div class="flex flex-col gap-6 items-start">
-      <a
+      <SharedLink
         v-for="piece in content.pieces"
-        :href="piece.link"
-        target="_blank"
-        rel="noopener noreferrer"
+        :url="piece.link"
         class="flex items-start justify-center bg-white text-black px-2"
       >
         <span>_</span><span>{{ piece.label }}</span>
-      </a>
+      </SharedLink>
     </div>
   </LayoutsScrollablePost>
 </template>

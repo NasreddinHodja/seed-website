@@ -6,14 +6,12 @@ defineProps<{
 
 <template>
   <div class="flex w-full flex-wrap justify-between gap-4 md:pb-10">
-    <a
+    <SharedLink
       v-for="artist in artists"
-      :href="artist.link"
-      target="_blank"
-      rel="noopener noreferrer"
+      :url="artist.link"
       class="text-4xl bg-white text-black px-2"
     >
       {{ artist.name }}
-    </a>
+    </SharedLink>
   </div>
 </template>

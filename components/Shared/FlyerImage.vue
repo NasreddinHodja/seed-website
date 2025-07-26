@@ -7,15 +7,15 @@ defineProps<{
 
 <template>
   <div class="inline-flex">
-    <a
+    <SharedLink
       v-if="link"
-      :href="link"
+      :url="link"
       target="_blank"
       rel="noopener noreferrer"
       class="flex items-center justify-center"
     >
       <SharedImageView :url="src" class="mx-auto" />
-    </a>
+    </SharedLink>
     <SharedImageView v-else :url="src" class="mx-auto" />
   </div>
 </template>

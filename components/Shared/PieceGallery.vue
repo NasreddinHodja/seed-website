@@ -6,11 +6,9 @@ defineProps<{
 
 <template>
   <div class="flex flex-col m-auto gap-6 md:gap-24">
-    <a
+    <SharedLink
       v-for="piece in pieces"
-      :href="piece.link"
-      target="_blank"
-      rel="noopener noreferrer"
+      :url="piece.link"
       class="flex flex-col items-end gap-2"
     >
       <SharedImageView :url="piece.src" class="m-auto" />
@@ -35,6 +33,6 @@ defineProps<{
         class="bg-performance text-black px-2"
         >WEB</span
       >
-    </a>
+    </SharedLink>
   </div>
 </template>

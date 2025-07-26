@@ -17,14 +17,9 @@ defineProps<{
 
     <figcaption class="flex flex-col gap-1">
       <span class="italic">{{ caption }}</span>
-      <a
-        v-if="link"
-        :href="link.url"
-        target="_blank"
-        rel="noreferre noopener"
-        class="w-fit underline"
-        >{{ link.label }}</a
-      >
+      <SharedLink v-if="link" :url="link.url" class="w-fit underline">
+        {{ link.label }}
+      </SharedLink>
     </figcaption>
   </figure>
 </template>

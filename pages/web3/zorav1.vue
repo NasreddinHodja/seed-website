@@ -19,7 +19,7 @@ const content = zorav1.en;
 
     <SharedPostDescription :paragraphs="content.descriptionParagraphs" />
 
-    <SharedFigure
+    <SharedCaptionedFigure
       video
       :src="content.drLolliVideo.src"
       :caption="content.drLolliVideo.text"
@@ -27,9 +27,9 @@ const content = zorav1.en;
       class="md:w-2/3"
     />
 
-    <a :href="content.seedHeart.link" target="_blank" class="w-full">
-      <img :src="content.seedHeart.src" class="m-auto md:w-1/3" />
-    </a>
+    <SharedLink :url="content.seedHeart.link" class="m-auto md:w-1/3">
+      <img :src="content.seedHeart.src" />
+    </SharedLink>
 
     <div class="flex flex-col gap-14">
       <h2>{{ content.artists.title }}</h2>
