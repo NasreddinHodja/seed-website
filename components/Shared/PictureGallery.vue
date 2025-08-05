@@ -19,7 +19,6 @@ const isCollapsed = ref(props.collapsed);
 const revealed = ref(isCollapsed ? 0 : 5);
 const imageHeights = reactive<Record<string, number>>({});
 const isComputingColumns = ref(false);
-const lastColumnCount = ref(1);
 
 const visibleColumns = computed(() => {
   const items = props.pictures.slice(0, revealed.value);

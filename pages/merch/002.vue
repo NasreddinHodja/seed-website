@@ -27,10 +27,10 @@ const content = index.en;
       />
     </div>
 
-    <div class="flex flex-col pt-10">
+    <div class="flex flex-col pt-10 mx-auto">
       <SharedFlyerImage
         v-for="picture in content.pictures"
-        class="m-auto w-full md:w-1/2 pb-10"
+        class="m-auto w-full md:w-2/3 pb-10 mx-auto"
         :src="picture"
       />
     </div>
