@@ -1,4 +1,4 @@
-import index from "@/content/index";
+import index from "~~/content/index";
 
 export default {
   en: {

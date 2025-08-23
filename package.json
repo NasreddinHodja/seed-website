@@ -12,17 +12,29 @@
     "postinstall": "nuxi prepare",
     "format": "prettier --write .",
     "format:check": "prettier --check .",
-    "lint": "npx vue-tsc --noEmit && npx eslint --ext .js,.ts,.jsx,.tsx,.vue ."
+    "lint": "eslint .",
+    "lint:fix": "eslint . --fix"
   },
   "dependencies": {
+    "@nuxt/eslint": "1.9.0",
     "@nuxt/icon": "1.10.3",
-    "@nuxtjs/tailwindcss": "6.13.1",
-    "nuxt": "^3.15.4",
+    "@nuxtjs/tailwindcss": "6.14.0",
+    "install": "^0.13.0",
+    "nuxt": "^4.0.3",
     "vue": "^3.5.17",
     "vue-router": "^4.5.1"
   },
   "devDependencies": {
-    "prettier": "^3.5.3"
+    "@eslint/css": "^0.10.0",
+    "@eslint/js": "^9.34.0",
+    "@eslint/json": "^0.13.1",
+    "@iconify-json/meteor-icons": "^1.2.1",
+    "eslint": "^9.34.0",
+    "eslint-plugin-vue": "^10.4.0",
+    "globals": "^16.3.0",
+    "jiti": "^2.5.1",
+    "prettier": "^3.5.3",
+    "typescript-eslint": "^8.40.0"
   },
   "packageManager": "yarn@1.22.22+sha1.ac34549e6aa8e7ead463a7407e1c7390f61a6610"
 }

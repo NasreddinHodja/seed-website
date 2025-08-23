@@ -1,4 +1,4 @@
-const { zinc, white } = require("tailwindcss/colors");
+import Colors from "tailwindcss/colors";
 
 module.exports = {
   theme: {
@@ -8,8 +8,8 @@ module.exports = {
     },
     extend: {
       colors: {
-        white: white,
-        gray: zinc,
+        white: Colors.white,
+        gray: Colors.zinc,
         pdf: "#8c8c8c",
         video: "#787878",
         audio: "#646464",

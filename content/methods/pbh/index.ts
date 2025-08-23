@@ -67,7 +67,7 @@ export default {
       implicades; um defeito, uma inconformidade inscrita na própria
       mecânica da repetição e do hábito, um erro incalculável, sempre
       prestes a implodi-la. Como disse a pensadora estadunidense Mckenzie
-      Wark — em um palestra realizada para a  Bienal de Arte Contemporânea
+      Wark — em um palestra realizada para a Bienal de Arte Contemporânea
       de Riga (Letônia) —, a respeito de nosso tempo propício à disseminação
       eficiente e proliferante de notícias falsas/fake-news, pós-verdade,
       precisamos pensar em modos mais interessantes e complexos de
