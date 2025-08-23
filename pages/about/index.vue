@@ -32,7 +32,7 @@ const content = index.en;
 
       <AboutInfoCard
         :title="content.seedPhilosophy.title"
-        :text="content.whoAreWe.text"
+        :text="content.seedPhilosophy.text"
       />
     </div>
   </div>
