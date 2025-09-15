@@ -29,7 +29,7 @@ const selectedItem = computed(() => {
       >
       <div class="pb-1 flex justify-end">
         <NuxtLink to="/">
-          <img :src="content.rightImage" class="w-24 min-w-24 ml-3" />
+          <NuxtImg :src="content.rightImage" class="w-24 min-w-24 ml-3" />
         </NuxtLink>
       </div>
     </div>

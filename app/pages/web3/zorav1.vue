@@ -25,7 +25,7 @@ const content = zorav1.en;
     />
 
     <SharedLink :url="content.seedHeart.link" class="m-auto md:w-1/3">
-      <img :src="content.seedHeart.src" />
+      <NuxtImg :src="content.seedHeart.src" />
     </SharedLink>
 
     <SharedCreditsSection

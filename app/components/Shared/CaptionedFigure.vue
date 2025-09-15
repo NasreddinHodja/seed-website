@@ -22,7 +22,7 @@ withDefaults(
 
     <SharedYTLazyEmbed v-else-if="type === 'youtube'" :video-id="src" />
 
-    <img v-else :src="src" />
+    <NuxtImg v-else :src="src" />
 
     <figcaption class="flex flex-col gap-1">
       <span v-if="caption" class="italic">{{ caption }}</span>

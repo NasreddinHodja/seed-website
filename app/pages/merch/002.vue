@@ -20,7 +20,7 @@ const content = index.en;
     <SharedFlyerImage class="m-auto w-full md:w-1/2" :src="content.flyer" />
 
     <div class="flex flex-row flex-wrap pt-10">
-      <img
+      <NuxtImg
         v-for="shirt in content.shirts"
         :key="shirt"
         class="m-auto w-full md:w-96 pb-10"

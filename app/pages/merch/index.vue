@@ -16,7 +16,7 @@ const content = index.en;
           <h1>
             {{ option.title }}
           </h1>
-          <img
+          <NuxtImg
             :src="option.picture"
             class="w-full md:w-1/2 h-auto object-cover mx-auto"
           />

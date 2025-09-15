@@ -23,7 +23,7 @@ const content = header.en;
     </div>
     <div class="w-60 pb-1 flex justify-start">
       <NuxtLink to="/">
-        <img :src="content.rightImage" class="w-36 min-w-36 ml-3" />
+        <NuxtImg :src="content.rightImage" class="w-36 min-w-36 ml-3" />
       </NuxtLink>
     </div>
   </div>

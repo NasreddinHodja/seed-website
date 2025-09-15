@@ -33,13 +33,10 @@ onMounted(async () => {
       </div>
     </div>
 
-    <img
+    <NuxtImg
       v-else
-      ref="img"
       :src="url"
       class="max-h-screen max-w-screen object-scale-down"
-      @load="handleLoad"
     />
-    <div v-if="isLoading" class="absolute inset-0 bg-black/50"></div>
   </div>
 </template>

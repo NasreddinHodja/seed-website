@@ -6,7 +6,7 @@ const content = index.en;
 
 <template>
   <div class="w-full h-full flex flex-col items-center justify-center">
-    <img class="px-10 pb-32" :src="content.backgroundImage" />
+    <NuxtImg :src="content.backgroundImage" sizes="300 md:600" class="pb-32" />
 
     <div class="absolute bottom-0 left-0 w-full flex flex-col px-4">
       <div

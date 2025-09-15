@@ -16,11 +16,11 @@ const videoId = extractYTVideoID(content.video);
       </SharedLink>
     </div>
 
-    <img id="shirts" class="m-auto" :src="content.gif" />
+    <NuxtImg id="shirts" class="m-auto" :src="content.gif" />
 
     <div class="flex flex-wrap gap-1 justify-center">
-      <img :src="content.images[0]" class="w-full md:w-1/3" />
-      <img :src="content.images[1]" class="w-full md:w-1/3" />
+      <NuxtImg :src="content.images[0]" class="w-full md:w-1/3" />
+      <NuxtImg :src="content.images[1]" class="w-full md:w-1/3" />
     </div>
   </LayoutsScrollablePost>
 </template>

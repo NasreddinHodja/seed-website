@@ -8,7 +8,7 @@ const content = seedxbosque_patagonia.en;
   <LayoutsScrollablePost>
     <SharedPostHeader :title="content.title" :related-links="[content.link]" />
 
-    <img :src="content.people" class="mx-auto" />
+    <NuxtImg :src="content.people" class="mx-auto" />
 
     <SharedPostDescription :paragraphs="content.description" />
 
@@ -21,7 +21,7 @@ const content = seedxbosque_patagonia.en;
       ]"
     />
 
-    <img :src="content.peopleB" class="mx-auto" />
-    <img :src="content.peopleC" class="mx-auto" />
+    <NuxtImg :src="content.peopleB" class="mx-auto" />
+    <NuxtImg :src="content.peopleC" class="mx-auto" />
   </LayoutsScrollablePost>
 </template>

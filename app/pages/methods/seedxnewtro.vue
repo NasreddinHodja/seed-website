@@ -37,6 +37,6 @@ const setVideos = content.sets.videos.map((video) => extractYTVideoID(video));
       />
     </div>
 
-    <img :src="content.people" class="mx-auto" />
+    <NuxtImg :src="content.people" class="mx-auto" />
   </LayoutsScrollablePost>
 </template>

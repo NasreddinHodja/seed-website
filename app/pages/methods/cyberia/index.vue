@@ -30,7 +30,7 @@ const content = index.en;
         <div
           class="flex-1 h-fit flex flex-col items-start gap-2 border-4 border-white"
         >
-          <img :src="content.image.src" class="w-full max-w-[900px]" />
+          <NuxtImg :src="content.image.src" class="w-full max-w-[900px]" />
         </div>
       </div>
     </div>

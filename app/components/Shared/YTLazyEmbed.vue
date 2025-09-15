@@ -10,7 +10,7 @@ const isPlaying = ref(false);
     class="relative w-full aspect-video cursor-pointer"
     @click="isPlaying = true"
   >
-    <img
+    <NuxtImg
       v-if="!isPlaying"
       :src="`https://img.youtube.com/vi/${videoId}/hqdefault.jpg`"
       alt="YouTube preview"

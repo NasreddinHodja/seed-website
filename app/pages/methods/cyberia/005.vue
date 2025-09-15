@@ -15,7 +15,7 @@ const content = index.en;
 
     <SharedShowLineUp :artists="content.lineup" />
 
-    <img :src="content.gif" class="h-auto mx-auto p-4 md:mb-14 bg-white" />
+    <NuxtImg :src="content.gif" class="h-auto mx-auto p-4 md:mb-14 bg-white" />
 
     <SharedPictureGallery :pictures="content.gallery" class="w-full mx-auto" />
   </LayoutsScrollablePost>
