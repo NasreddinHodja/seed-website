@@ -37,6 +37,7 @@ onMounted(async () => {
       v-else
       :src="url"
       class="max-h-screen max-w-screen object-scale-down"
+      sizes="400px md:600px"
     />
   </div>
 </template>

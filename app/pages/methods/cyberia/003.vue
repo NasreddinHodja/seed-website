@@ -22,8 +22,7 @@ const videoId = extractYTVideoID(content.video);
     <SharedPictureGallery
       :pictures="
         content.gallery.map((url) => ({
-          originUrl: url,
-          thumbUrl: url,
+          url: url,
           link: url,
         }))
       "

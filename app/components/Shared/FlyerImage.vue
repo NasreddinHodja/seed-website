@@ -14,8 +14,8 @@ defineProps<{
       rel="noopener noreferrer"
       class="flex items-center justify-center"
     >
-      <SharedImageView :url="src" class="mx-auto" />
+      <NuxtImg :src="src" sizes="500px md:1000px" class="mx-auto" />
     </SharedLink>
-    <SharedImageView v-else :url="src" class="mx-auto" />
+    <NuxtImg v-else :src="src" sizes="500px md:1000px" class="mx-auto" />
   </div>
 </template>

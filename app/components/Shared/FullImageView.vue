@@ -39,9 +39,11 @@ onMounted(async () => {
       @click.stop="handleClose"
     />
 
-    <SharedImageView
-      :url="url"
-      class="mx-2 my-2"
+    <NuxtImg
+      :src="url"
+      class="mx-2 my-2 max-h-full max-w-full"
+      height="2000"
+      fit="cover"
       @click.stop=""
       @load="handleLoad"
     />

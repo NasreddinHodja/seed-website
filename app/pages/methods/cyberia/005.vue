@@ -8,7 +8,7 @@ const content = index.en;
   <LayoutsScrollablePost>
     <SharedPostHeader :title="content.title" />
 
-    <div class="flex flex-col md:flex-row gap-2">
+    <div class="flex flex-col md:flex-row gap-2 w-full justify-center">
       <SharedFlyerImage :src="content.flyerFront" />
       <SharedFlyerImage :src="content.flyerBack" />
     </div>

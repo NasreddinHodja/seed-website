@@ -3,7 +3,6 @@ export type Name = string;
 export type MaybeLinkedName = Name | LinkedName;
 
 export type Picture = {
-  originUrl: string;
-  thumbUrl: string;
+  url: string;
   link: string;
 };

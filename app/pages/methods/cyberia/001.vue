@@ -15,8 +15,7 @@ const content = index.en;
     <SharedPictureGallery
       :pictures="
         content.gallery.map((url) => ({
-          originUrl: url,
-          thumbUrl: url,
+          url: url,
           link: url,
         }))
       "

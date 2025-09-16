@@ -1,6 +1,4 @@
 <script setup lang="ts">
-import type { MaybeLinkedName } from "~/types";
-
 defineProps<{
   credits: {
     title: string;

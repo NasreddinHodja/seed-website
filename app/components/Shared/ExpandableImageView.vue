@@ -3,9 +3,15 @@ const emit = defineEmits<{
   (e: "load", event: Event): void;
 }>();
 
-defineProps<{
-  picture: Picture;
-}>();
+withDefaults(
+  defineProps<{
+    picture: Picture;
+    width?: number;
+  }>(),
+  {
+    width: 300,
+  }
+);
 
 const img = ref<HTMLImageElement | null>(null);
 const isLoading = ref(true);
@@ -35,11 +41,11 @@ onMounted(async () => {
 <template>
   <div>
     <div @click="expandImage">
-      <SharedImageView :url="picture.thumbUrl" @load="handleLoad" />
+      <NuxtImg :src="picture.url" :width="width" @load="handleLoad" />
     </div>
     <SharedFullImageView
       v-if="isExpanded"
-      :url="picture.originUrl"
+      :url="picture.url"
       @close="collapseImage"
     />
   </div>

@@ -29,7 +29,7 @@ const visibleColumns = computed(() => {
   const heights = Array(columnCount.value).fill(0);
 
   for (const item of items) {
-    const h = imageHeights[item.thumbUrl] ?? 100;
+    const h = imageHeights[item.url] ?? 100;
     const i = heights.indexOf(Math.min(...heights));
     if (columns[i]) {
       columns[i].push(item);
@@ -77,6 +77,7 @@ const updateColumnCount = () => {
 
 const onImageLoad = (key: string, e: Event) => {
   const el = e.target as HTMLImageElement;
+  console.log(el);
   if (el !== null) imageHeights[key] = el.offsetHeight;
 };
 
@@ -109,29 +110,28 @@ onUnmounted(() => {
     </div>
 
     <div v-if="!isCollapsed" class="flex flex-col gap-5">
-      <div ref="masonryRef" class="flex gap-4">
+      <div ref="masonryRef" class="flex gap-4 w-full justify-center">
         <div
           v-for="(column, colIndex) in visibleColumns"
           :key="colIndex"
-          class=""
           :class="{
-            'flex flex-col gap-4 flex-1 invisible': isComputingColumns,
-            'flex flex-col gap-4 flex-1 visible': !isComputingColumns,
+            'flex flex-col gap-4 invisible': isComputingColumns,
+            'flex flex-col gap-4 visible': !isComputingColumns,
           }"
         >
           <SharedExpandableImageView
             v-for="picture in column"
-            :key="picture.originUrl"
+            :key="picture.url"
             :picture="picture"
-            class="w-full"
-            @load="(e) => onImageLoad(picture.thumbUrl, e)"
+            class="w-fit"
+            @load="(e) => onImageLoad(picture.url, e)"
           />
         </div>
       </div>
 
       <div
         v-if="visibleColumns.flat().length !== pictures.length"
-        class="text-lg hover:underline flex justify-end"
+        class="text-lg hover:underline flex justify-end cursor-pointer"
         @click="revealMore"
       >
         show more

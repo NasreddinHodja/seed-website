@@ -12,7 +12,7 @@ defineProps<{
       :url="piece.link"
       class="flex flex-col items-end gap-2"
     >
-      <SharedImageView :url="piece.src" class="m-auto" />
+      <SharedPieceView :url="piece.src" class="m-auto" />
       <span v-if="piece.type === 'video'" class="bg-video text-black px-2"
         >VIDEO</span
       >
