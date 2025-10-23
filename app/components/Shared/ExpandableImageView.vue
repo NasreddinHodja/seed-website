@@ -7,9 +7,11 @@ withDefaults(
   defineProps<{
     picture: Picture;
     width?: number;
+    height?: number;
   }>(),
   {
     width: 300,
+    height: 200,
   }
 );
 
@@ -42,6 +44,15 @@ onMounted(async () => {
   <div>
     <div @click="expandImage">
       <NuxtImg :src="picture.url" :width="width" @load="handleLoad" />
+    </div>
+    <div
+      v-if="isLoading"
+      class="flex justify-center items-center w-full h-full"
+    >
+      <div
+        class="bg-gray-800"
+        :style="{ width: width + 'px', height: height + 'px' }"
+      ></div>
     </div>
     <SharedFullImageView
       v-if="isExpanded"
