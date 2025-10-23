@@ -77,7 +77,6 @@ const updateColumnCount = () => {
 
 const onImageLoad = (key: string, e: Event) => {
   const el = e.target as HTMLImageElement;
-  console.log(el);
   if (el !== null) imageHeights[key] = el.offsetHeight;
 };
 
@@ -134,7 +133,7 @@ onUnmounted(() => {
         class="text-lg hover:underline flex justify-end cursor-pointer"
         @click="revealMore"
       >
-        show more
+        <div class="pb-1 px-3 bg-white text-black">+++</div>
       </div>
     </div>
   </div>
