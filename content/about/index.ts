@@ -7,10 +7,6 @@ export default {
       text: "S.E.E.D_dao is a cross-disciplinary collective of web3 artists conceiving artistic practices as well as an exhibition experience that brings together immersive environments and the development of a curatorial axis of works in Digital Art (NFT) and IRL",
       link: r2Url("documents", "seed_who_are.pdf"),
     },
-    coreMembers: {
-      link: "/about/core-members",
-      title: "Core members",
-    },
     contactUs: index.en.contacts,
     seedPhilosophy: {
       title: "S.E.E.D. philosophy",

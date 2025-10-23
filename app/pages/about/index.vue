@@ -19,12 +19,6 @@ const content = index.en;
           :text="content.whoAreWe.text"
         />
 
-        <div class="flex flex-col">
-          <NuxtLink :to="content.coreMembers.link">
-            <h1 class="bg-black w-fit">{{ content.coreMembers.title }}</h1>
-          </NuxtLink>
-        </div>
-
         <AboutContactCard
           :title="content.contactUs.label"
           :links="content.contactUs.links"
