@@ -6,7 +6,7 @@
 [![TypeScript](https://img.shields.io/badge/TypeScript-strict-3178C6?logo=typescript&logoColor=white)](https://www.typescriptlang.org)
 [![License: GPL-3.0](https://img.shields.io/badge/License-GPL--3.0-blue.svg)](./LICENSE)
 
-Website and digital archive for **S.E.E.D.**, a cross-disciplinary Latin American art collective working at the intersection of contemporary art, experimental media, and web3. The site serves as a living portfolio — cataloguing exhibitions, NFT drops, artist residencies, and merchandise across multiple countries.
+Website and digital archive for **S.E.E.D.**, a cross-disciplinary Latin American art collective working at the intersection of contemporary art, experimental media, and web3. The site serves as a living portfolio - cataloguing exhibitions, NFT drops, artist residencies, and merchandise across multiple countries.
 
 > **[Project Documentation](https://seed-website-docs.vercel.app/)**
 
@@ -14,12 +14,12 @@ Website and digital archive for **S.E.E.D.**, a cross-disciplinary Latin America
 
 ## Features
 
-- **Exhibition Archive** — Detailed documentation of events like the *Cyberia* meet-party series and the *Parallel Biome Hypothesis* multi-room installation
-- **NFT Collections** — Showcases for Zora v1/v2 collective drops with per-artist attribution
-- **Masonry Gallery** — Dynamic, responsive image gallery with lazy loading, expandable views, and progressive reveal
-- **Bilingual Content** — Full Portuguese/English support driven by structured content files
-- **Media Optimization** — WebP-first images served through Cloudflare R2 Workers with NuxtImage processing
-- **Artist Profiles** — Individual entity pages for collective members
+- **Exhibition Archive** - Detailed documentation of events like the *Cyberia* meet-party series and the *Parallel Biome Hypothesis* multi-room installation
+- **NFT Collections** - Showcases for Zora v1/v2 collective drops with per-artist attribution
+- **Masonry Gallery** - Dynamic, responsive image gallery with lazy loading, expandable views, and progressive reveal
+- **Bilingual Content** - Full Portuguese/English support driven by structured content files
+- **Media Optimization** - WebP-first images served through Cloudflare R2 Workers with NuxtImage processing
+- **Artist Profiles** - Individual entity pages for collective members
 
 ## Architecture
 
